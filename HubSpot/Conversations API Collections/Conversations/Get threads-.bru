@@ -11,17 +11,17 @@ get {
 }
 
 query {
-  after: <string>
-  limit: <integer>
-  sort: <string>
-  sort: <string>
+  ~after: <string>
+  ~limit: <integer>
+  ~sort: <string>
+  ~sort: <string>
   inboxId: <integer>
   inboxId: <integer>
   associatedContactId: <long>
   threadStatus: <string>
   latestMessageTimestampAfter: <dateTime>
-  archived: <boolean>
-  property: <string>
+  ~archived: <boolean>
+  ~property: <string>
 }
 
 auth:bearer {
