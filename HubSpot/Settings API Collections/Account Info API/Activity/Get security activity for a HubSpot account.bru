@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/account-info/v3/activity/security?after=<string>&limit=<integer>&userId=<integer>&fromTimestamp=<long>
+  url: {{baseUrl}}/account-info/v3/activity/security&fromTimestamp=<long>
   body: none
   auth: bearer
 }
@@ -13,7 +13,7 @@ get {
 query {
   ~after: <string>
   ~limit: <integer>
-  userId: <integer>
+  ~userId: <integer>
   fromTimestamp: <long>
 }
 
