@@ -1,7 +1,7 @@
 meta {
   name: Reset Draft
   type: http
-  seq: 2
+  seq: 3
 }
 
 post {
@@ -10,10 +10,10 @@ post {
   auth: bearer
 }
 
-auth:bearer {
-  token: {{LL_PA}}
-}
-
 headers {
   Accept: */*
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }

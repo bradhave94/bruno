@@ -1,7 +1,7 @@
 meta {
   name: Restore a revision of a marketing email to DRAFT state
   type: http
-  seq: 3
+  seq: 4
 }
 
 post {
@@ -10,10 +10,10 @@ post {
   auth: bearer
 }
 
-auth:bearer {
-  token: {{LL_PA}}
-}
-
 headers {
   Accept: application/json
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }

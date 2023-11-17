@@ -1,7 +1,7 @@
 meta {
   name: Get revisions of a marketing email
   type: http
-  seq: 6
+  seq: 7
 }
 
 get {
@@ -16,10 +16,10 @@ query {
   ~limit: <integer>
 }
 
-auth:bearer {
-  token: {{LL_PA}}
-}
-
 headers {
   Accept: application/json
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }

@@ -1,7 +1,7 @@
 meta {
   name: Get the variation of a an A-B marketing email
   type: http
-  seq: 1
+  seq: 2
 }
 
 get {
@@ -10,10 +10,10 @@ get {
   auth: bearer
 }
 
-auth:bearer {
-  token: {{LL_PA}}
-}
-
 headers {
   Accept: application/json
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }

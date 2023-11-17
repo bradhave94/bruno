@@ -1,7 +1,7 @@
 meta {
   name: Get draft version of a marketing email
   type: http
-  seq: 4
+  seq: 5
 }
 
 get {
@@ -10,10 +10,10 @@ get {
   auth: bearer
 }
 
-auth:bearer {
-  token: {{LL_PA}}
-}
-
 headers {
   Accept: application/json
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }

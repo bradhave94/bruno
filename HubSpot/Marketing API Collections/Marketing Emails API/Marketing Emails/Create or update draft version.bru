@@ -1,7 +1,7 @@
 meta {
   name: Create or update draft version
   type: http
-  seq: 5
+  seq: 6
 }
 
 patch {
@@ -10,13 +10,13 @@ patch {
   auth: bearer
 }
 
-auth:bearer {
-  token: {{LL_PA}}
-}
-
 headers {
   Content-Type: application/json
   Accept: application/json
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 body:json {

@@ -1,7 +1,7 @@
 meta {
   name: Get all marketing emails for a HubSpot account-
   type: http
-  seq: 9
+  seq: 1
 }
 
 get {
@@ -11,6 +11,8 @@ get {
 }
 
 query {
+  ~type: OPTIN_EMAIL
+  ~isPublished: <boolean>
   ~createdAt: <dateTime>
   ~createdAfter: <dateTime>
   ~createdBefore: <dateTime>
@@ -22,17 +24,15 @@ query {
   ~after: <string>
   ~limit: <integer>
   ~includeStats: <boolean>
-  type: OPTIN_EMAIL
-  isPublished: <boolean>
   ~includedProperties: <string>
   ~includedProperties: <string>
   ~archived: <boolean>
 }
 
-auth:bearer {
-  token: {{LL_PA}}
-}
-
 headers {
   Accept: application/json
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
