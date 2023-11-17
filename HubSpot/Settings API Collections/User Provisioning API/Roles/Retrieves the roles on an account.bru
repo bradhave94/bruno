@@ -1,0 +1,19 @@
+meta {
+  name: Retrieves the roles on an account
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/settings/v3/users/roles
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

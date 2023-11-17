@@ -1,0 +1,33 @@
+meta {
+  name: Get actors
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/conversations/v3/conversations/actors/batch/read?property=<string>
+  body: json
+  auth: bearer
+}
+
+query {
+  property: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      "<string>",
+      "<string>"
+    ]
+  }
+}

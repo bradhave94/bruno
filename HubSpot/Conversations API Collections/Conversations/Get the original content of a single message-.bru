@@ -1,0 +1,23 @@
+meta {
+  name: Get the original content of a single message-
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/threads/:threadId/messages/:messageId/original-content?property=<string>
+  body: none
+  auth: bearer
+}
+
+query {
+  property: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get a single conversations inbox-
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/inboxes/:inboxId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

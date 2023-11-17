@@ -1,0 +1,30 @@
+meta {
+  name: Read
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/objects/calls/:callId?properties=<string>&properties=<string>&propertiesWithHistory=<string>&propertiesWithHistory=<string>&associations=<string>&associations=<string>&archived=false&idProperty=<string>
+  body: none
+  auth: bearer
+}
+
+query {
+  properties: <string>
+  properties: <string>
+  propertiesWithHistory: <string>
+  propertiesWithHistory: <string>
+  associations: <string>
+  associations: <string>
+  archived: false
+  idProperty: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

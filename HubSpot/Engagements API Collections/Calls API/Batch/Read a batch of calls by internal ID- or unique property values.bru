@@ -1,0 +1,46 @@
+meta {
+  name: Read a batch of calls by internal ID- or unique property values
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/calls/batch/read?archived=false
+  body: json
+  auth: bearer
+}
+
+query {
+  archived: false
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>"
+      },
+      {
+        "id": "<string>"
+      }
+    ],
+    "properties": [
+      "<string>",
+      "<string>"
+    ],
+    "propertiesWithHistory": [
+      "<string>",
+      "<string>"
+    ],
+    "idProperty": "<string>"
+  }
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Get channels-
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/channels?after=<string>&limit=<integer>&sort=<string>&sort=<string>&defaultPageLength=<integer>
+  body: none
+  auth: bearer
+}
+
+query {
+  after: <string>
+  limit: <integer>
+  sort: <string>
+  sort: <string>
+  defaultPageLength: <integer>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

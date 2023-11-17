@@ -1,0 +1,31 @@
+meta {
+  name: List
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/objects/communications
+  body: none
+  auth: bearer
+}
+
+query {
+  limit: 10
+  after: <string>
+  properties: <string>
+  properties: <string>
+  propertiesWithHistory: <string>
+  propertiesWithHistory: <string>
+  associations: <string>
+  associations: <string>
+  archived: false
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

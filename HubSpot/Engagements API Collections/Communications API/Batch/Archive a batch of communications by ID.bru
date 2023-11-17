@@ -1,0 +1,33 @@
+meta {
+  name: Archive a batch of communications by ID
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/communications/batch/archive
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>"
+      },
+      {
+        "id": "<string>"
+      }
+    ]
+  }
+}

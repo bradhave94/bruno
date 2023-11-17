@@ -7,7 +7,7 @@ meta {
 get {
   url: {{baseUrl}}/cms/v3/blog-settings/settings?createdAt=<dateTime>&createdAfter=<dateTime>&createdBefore=<dateTime>&updatedAt=<dateTime>&updatedAfter=<dateTime>&updatedBefore=<dateTime>&sort=<string>&sort=<string>&after=<string>&limit=<integer>&archived=<boolean>
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
@@ -22,6 +22,10 @@ query {
   after: <string>
   limit: <integer>
   archived: <boolean>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

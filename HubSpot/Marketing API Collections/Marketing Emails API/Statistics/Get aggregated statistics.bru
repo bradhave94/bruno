@@ -1,0 +1,27 @@
+meta {
+  name: Get aggregated statistics
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/marketing/v3/emails/statistics/list?startTimestamp=<string>&endTimestamp=<string>&emailIds=<long>&emailIds=<long>&property=<string>
+  body: none
+  auth: bearer
+}
+
+query {
+  startTimestamp: <string>
+  endTimestamp: <string>
+  emailIds: <long>
+  emailIds: <long>
+  property: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

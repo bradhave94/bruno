@@ -7,7 +7,11 @@ meta {
 post {
   url: {{baseUrl}}/cms/v3/pages/site-pages/schedule
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

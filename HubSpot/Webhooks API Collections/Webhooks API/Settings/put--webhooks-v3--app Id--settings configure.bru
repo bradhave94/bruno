@@ -1,0 +1,30 @@
+meta {
+  name: put--webhooks-v3--app Id--settings configure
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/webhooks/v3/:appId/settings
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "targetUrl": "<string>",
+    "throttling": {
+      "maxConcurrentRequests": "<integer>",
+      "period": "ROLLING_MINUTE"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: patch--webhooks-v3--app Id--subscriptions--subscription Id- update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/webhooks/v3/:appId/subscriptions/:subscriptionId
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "active": "<boolean>"
+  }
+}

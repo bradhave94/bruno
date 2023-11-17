@@ -1,0 +1,42 @@
+meta {
+  name: Update a batch of communications
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/communications/batch/update
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "culpa_0": "<string>",
+          "in2_": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "pariatur_4fc": "<string>",
+          "in2f6": "<string>",
+          "exercitation_b2": "<string>"
+        }
+      }
+    ]
+  }
+}

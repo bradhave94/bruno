@@ -1,0 +1,40 @@
+meta {
+  name: Update a batch of postal mail
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/postal_mail/batch/update
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "Duis_6": "<string>",
+          "deserunt__": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "Ut88a": "<string>"
+        }
+      }
+    ]
+  }
+}

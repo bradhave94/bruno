@@ -1,0 +1,19 @@
+meta {
+  name: Get a single channel account-
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/channel-accounts/:channelAccountId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

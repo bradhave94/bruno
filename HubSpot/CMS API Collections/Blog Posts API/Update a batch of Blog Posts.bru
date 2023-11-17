@@ -7,11 +7,15 @@ meta {
 post {
   url: {{baseUrl}}/cms/v3/blogs/posts/batch/update?archived=<boolean>
   body: json
-  auth: none
+  auth: bearer
 }
 
 query {
   archived: <boolean>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

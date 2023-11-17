@@ -1,0 +1,27 @@
+meta {
+  name: Get conversations inboxes-
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/inboxes?after=<string>&limit=<integer>&sort=<string>&sort=<string>&defaultPageLength=<integer>
+  body: none
+  auth: bearer
+}
+
+query {
+  after: <string>
+  limit: <integer>
+  sort: <string>
+  sort: <string>
+  defaultPageLength: <integer>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

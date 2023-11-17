@@ -1,0 +1,33 @@
+meta {
+  name: Get threads-
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/threads?after=<string>&limit=<integer>&sort=<string>&sort=<string>&inboxId=<integer>&inboxId=<integer>&associatedContactId=<long>&threadStatus=<string>&latestMessageTimestampAfter=<dateTime>&archived=<boolean>&property=<string>
+  body: none
+  auth: bearer
+}
+
+query {
+  after: <string>
+  limit: <integer>
+  sort: <string>
+  sort: <string>
+  inboxId: <integer>
+  inboxId: <integer>
+  associatedContactId: <long>
+  threadStatus: <string>
+  latestMessageTimestampAfter: <dateTime>
+  archived: <boolean>
+  property: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

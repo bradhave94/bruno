@@ -1,0 +1,19 @@
+meta {
+  name: Get a single channel-
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/channels/:channelId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

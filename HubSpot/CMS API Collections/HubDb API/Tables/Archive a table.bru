@@ -7,7 +7,11 @@ meta {
 delete {
   url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName
   body: none
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

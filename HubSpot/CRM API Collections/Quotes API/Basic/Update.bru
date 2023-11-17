@@ -7,11 +7,15 @@ meta {
 patch {
   url: {{baseUrl}}/crm/v3/objects/quotes/:quoteId?idProperty=<string>
   body: json
-  auth: none
+  auth: bearer
 }
 
 query {
   idProperty: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

@@ -1,0 +1,44 @@
+meta {
+  name: Update a batch of meetings
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/meetings/batch/update
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "qui42d": "<string>",
+          "ut_01": "<string>",
+          "magna_52a": "<string>",
+          "adb93": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "aliquip_6": "<string>",
+          "cillum_ef6": "<string>",
+          "aliquip_641": "<string>"
+        }
+      }
+    ]
+  }
+}

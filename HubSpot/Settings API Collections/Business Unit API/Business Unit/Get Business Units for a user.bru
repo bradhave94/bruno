@@ -1,0 +1,26 @@
+meta {
+  name: Get Business Units for a user
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/business-units/v3/business-units/user/:userId?properties=<string>&properties=<string>&name=<string>&name=<string>
+  body: none
+  auth: bearer
+}
+
+query {
+  properties: <string>
+  properties: <string>
+  name: <string>
+  name: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

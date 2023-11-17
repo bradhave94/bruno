@@ -1,0 +1,31 @@
+meta {
+  name: Get channel accounts-
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/channel-accounts?channelId=<integer>&channelId=<integer>&inboxId=<integer>&inboxId=<integer>&after=<string>&limit=<integer>&sort=<string>&sort=<string>&defaultPageLength=<integer>
+  body: none
+  auth: bearer
+}
+
+query {
+  channelId: <integer>
+  channelId: <integer>
+  inboxId: <integer>
+  inboxId: <integer>
+  after: <string>
+  limit: <integer>
+  sort: <string>
+  sort: <string>
+  defaultPageLength: <integer>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

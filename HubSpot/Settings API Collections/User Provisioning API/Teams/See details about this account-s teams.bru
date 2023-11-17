@@ -1,0 +1,19 @@
+meta {
+  name: See details about this account-s teams
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/settings/v3/users/teams
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

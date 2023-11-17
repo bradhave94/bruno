@@ -7,7 +7,7 @@ meta {
 get {
   url: {{baseUrl}}/crm/v3/owners/?email=<string>&after=<string>&limit=100&archived=false
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
@@ -15,6 +15,10 @@ query {
   after: <string>
   limit: 100
   archived: false
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

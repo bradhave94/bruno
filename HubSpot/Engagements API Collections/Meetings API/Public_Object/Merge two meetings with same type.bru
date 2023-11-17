@@ -1,0 +1,27 @@
+meta {
+  name: Merge two meetings with same type
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/meetings/merge
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "objectIdToMerge": "<string>",
+    "primaryObjectId": "<string>"
+  }
+}

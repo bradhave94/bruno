@@ -7,7 +7,11 @@ meta {
 delete {
   url: {{baseUrl}}/crm/v3/lists/:listId/memberships
   body: none
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

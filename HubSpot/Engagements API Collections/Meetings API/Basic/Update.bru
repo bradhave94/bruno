@@ -1,0 +1,34 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/objects/meetings/:meetingId?idProperty=<string>
+  body: json
+  auth: bearer
+}
+
+query {
+  idProperty: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "properties": {
+      "tempor_5e": "<string>",
+      "eiusmod_c": "<string>",
+      "laborum_91": "<string>"
+    }
+  }
+}

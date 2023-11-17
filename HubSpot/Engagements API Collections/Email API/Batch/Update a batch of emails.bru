@@ -1,0 +1,41 @@
+meta {
+  name: Update a batch of emails
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/emails/batch/update
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "veniam_8": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "dolor16": "<string>",
+          "consequat97c": "<string>",
+          "consectetur350": "<string>"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Delete a single token by ID-
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/marketing/v3/transactional/smtp-tokens/:tokenId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: */*
+}

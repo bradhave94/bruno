@@ -7,13 +7,17 @@ meta {
 get {
   url: {{baseUrl}}/crm/v3/imports/?after=<string>&before=<string>&limit=<integer>
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
   after: <string>
   before: <string>
   limit: <integer>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

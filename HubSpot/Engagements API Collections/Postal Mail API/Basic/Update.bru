@@ -1,0 +1,35 @@
+meta {
+  name: Update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/objects/postal_mail/:postalMailId?idProperty=<string>
+  body: json
+  auth: bearer
+}
+
+query {
+  idProperty: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "properties": {
+      "velita": "<string>",
+      "et_cf": "<string>",
+      "aliqua_1e": "<string>",
+      "ex8fc": "<string>"
+    }
+  }
+}

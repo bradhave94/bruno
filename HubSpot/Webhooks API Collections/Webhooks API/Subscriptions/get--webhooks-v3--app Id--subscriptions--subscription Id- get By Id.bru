@@ -1,0 +1,19 @@
+meta {
+  name: get--webhooks-v3--app Id--subscriptions--subscription Id- get By Id
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/webhooks/v3/:appId/subscriptions/:subscriptionId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Archive
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/crm/v3/objects/calls/:callId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: */*
+}

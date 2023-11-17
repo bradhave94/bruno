@@ -1,0 +1,40 @@
+meta {
+  name: Update a batch of calls
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/calls/batch/update
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "ipsum_8": "<string>",
+          "occaecat873": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "essea": "<string>"
+        }
+      }
+    ]
+  }
+}

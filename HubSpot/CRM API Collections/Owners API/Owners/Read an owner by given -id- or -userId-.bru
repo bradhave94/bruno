@@ -7,12 +7,16 @@ meta {
 get {
   url: {{baseUrl}}/crm/v3/owners/:ownerId?idProperty=id&archived=false
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
   idProperty: id
   archived: false
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

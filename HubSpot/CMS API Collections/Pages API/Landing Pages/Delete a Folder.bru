@@ -7,11 +7,15 @@ meta {
 delete {
   url: {{baseUrl}}/cms/v3/pages/landing-pages/folders/:objectId?archived=<boolean>
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
   archived: <boolean>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

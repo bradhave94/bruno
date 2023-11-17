@@ -1,0 +1,35 @@
+meta {
+  name: Update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/objects/communications/:communicationId?idProperty=<string>
+  body: json
+  auth: bearer
+}
+
+query {
+  idProperty: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "properties": {
+      "nulla_6_5": "<string>",
+      "sit_85e": "<string>",
+      "Duis7cc": "<string>",
+      "aliqua_0": "<string>"
+    }
+  }
+}

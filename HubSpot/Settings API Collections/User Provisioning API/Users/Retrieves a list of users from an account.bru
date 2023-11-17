@@ -1,0 +1,24 @@
+meta {
+  name: Retrieves a list of users from an account
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/settings/v3/users/?limit=<integer>&after=<string>
+  body: none
+  auth: bearer
+}
+
+query {
+  limit: <integer>
+  after: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

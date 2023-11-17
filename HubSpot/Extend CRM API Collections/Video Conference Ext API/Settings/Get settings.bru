@@ -1,0 +1,19 @@
+meta {
+  name: Get settings
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/extensions/videoconferencing/settings/:appId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

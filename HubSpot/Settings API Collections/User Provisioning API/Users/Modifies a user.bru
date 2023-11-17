@@ -1,0 +1,35 @@
+meta {
+  name: Modifies a user
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/settings/v3/users/:userId?idProperty=<string>
+  body: json
+  auth: bearer
+}
+
+query {
+  idProperty: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "primaryTeamId": "<string>",
+    "roleId": "<string>",
+    "secondaryTeamIds": [
+      "<string>",
+      "<string>"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+meta {
+  name: Send a single transactional email asynchronously-
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/marketing/v3/transactional/single-email/send
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "emailId": "<integer>",
+    "message": {
+      "to": "<string>",
+      "from": "<string>",
+      "sendId": "<string>",
+      "replyTo": [
+        "<string>",
+        "<string>"
+      ],
+      "cc": [
+        "<string>",
+        "<string>"
+      ],
+      "bcc": [
+        "<string>",
+        "<string>"
+      ]
+    },
+    "contactProperties": {
+      "proident3ed": "<string>",
+      "tempor_7d": "<string>",
+      "dolor713": "<string>"
+    },
+    "customProperties": {
+      "id_ff": {},
+      "in45": {},
+      "sed3": {},
+      "suntd_": {},
+      "qui0f5": {}
+    }
+  }
+}

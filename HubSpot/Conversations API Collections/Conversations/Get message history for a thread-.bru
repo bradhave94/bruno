@@ -1,0 +1,28 @@
+meta {
+  name: Get message history for a thread-
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/threads/:threadId/messages?after=<string>&limit=<integer>&sort=<string>&sort=<string>&archived=<boolean>&property=<string>
+  body: none
+  auth: bearer
+}
+
+query {
+  after: <string>
+  limit: <integer>
+  sort: <string>
+  sort: <string>
+  archived: <boolean>
+  property: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Get a single actor-
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/actors/:actorId?property=<string>
+  body: none
+  auth: bearer
+}
+
+query {
+  property: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

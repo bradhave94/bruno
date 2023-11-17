@@ -1,0 +1,26 @@
+meta {
+  name: patch--crm-v3-extensions-calling--app Id--settings-recording
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/extensions/calling/:appId/settings/recording
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "urlToRetrieveAuthedRecording": "<string>"
+  }
+}

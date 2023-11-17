@@ -1,0 +1,25 @@
+meta {
+  name: Get login activity for a HubSpot account-
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/account-info/v3/activity/login?after=<string>&limit=<integer>&userId=<integer>
+  body: none
+  auth: bearer
+}
+
+query {
+  after: <string>
+  limit: <integer>
+  userId: <integer>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

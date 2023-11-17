@@ -1,0 +1,36 @@
+meta {
+  name: Sends Custom Behavioral Event
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/events/v3/send
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "eventName": "<string>",
+    "utk": "<string>",
+    "email": "<string>",
+    "properties": {
+      "dolorfe_": "<string>",
+      "do_2c": "<string>",
+      "laborum_0_": "<string>"
+    },
+    "occurredAt": "<dateTime>",
+    "objectId": "<string>",
+    "uuid": "<string>"
+  }
+}

@@ -7,11 +7,15 @@ meta {
 post {
   url: {{baseUrl}}/crm/v3/objects/discounts/batch/read?archived=false
   body: json
-  auth: none
+  auth: bearer
 }
 
 query {
   archived: false
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

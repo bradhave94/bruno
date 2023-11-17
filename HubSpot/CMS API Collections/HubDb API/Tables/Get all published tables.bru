@@ -5,25 +5,33 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/cms/v3/hubdb/tables?sort=<string>&sort=<string>&after=<string>&limit=<integer>&createdAt=<dateTime>&createdAfter=<dateTime>&createdBefore=<dateTime>&updatedAt=<dateTime>&updatedAfter=<dateTime>&updatedBefore=<dateTime>&archived=<boolean>
+  url: {{baseUrl}}/cms/v3/hubdb/tables
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
-  sort: <string>
-  sort: <string>
-  after: <string>
-  limit: <integer>
-  createdAt: <dateTime>
-  createdAfter: <dateTime>
-  createdBefore: <dateTime>
-  updatedAt: <dateTime>
-  updatedAfter: <dateTime>
-  updatedBefore: <dateTime>
-  archived: <boolean>
+  ~sort: <string>
+  ~sort: <string>
+  ~after: <string>
+  ~limit: <integer>
+  ~createdAt: <dateTime>
+  ~createdAfter: <dateTime>
+  ~createdBefore: <dateTime>
+  ~updatedAt: <dateTime>
+  ~updatedAfter: <dateTime>
+  ~updatedBefore: <dateTime>
+  ~archived: <boolean>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {
   Accept: application/json
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }

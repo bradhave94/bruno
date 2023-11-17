@@ -7,7 +7,7 @@ meta {
 get {
   url: {{baseUrl}}/crm/v3/objects/contacts/:contactId?properties=<string>&properties=<string>&propertiesWithHistory=<string>&propertiesWithHistory=<string>&associations=<string>&associations=<string>&archived=false
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
@@ -18,6 +18,10 @@ query {
   associations: <string>
   associations: <string>
   archived: false
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

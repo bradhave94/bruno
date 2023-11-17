@@ -1,0 +1,42 @@
+meta {
+  name: Update a batch of tasks
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/tasks/batch/update
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "veniam9": "<string>",
+          "sint_0": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "irure_eb": "<string>",
+          "eiusmod1": "<string>",
+          "ipsum_f4": "<string>"
+        }
+      }
+    ]
+  }
+}

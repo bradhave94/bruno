@@ -7,11 +7,15 @@ meta {
 get {
   url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/export?format=<string>
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
   format: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

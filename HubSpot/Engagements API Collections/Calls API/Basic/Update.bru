@@ -1,0 +1,32 @@
+meta {
+  name: Update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/objects/calls/:callId?idProperty=<string>
+  body: json
+  auth: bearer
+}
+
+query {
+  idProperty: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "properties": {
+      "incididunt_a": "<string>"
+    }
+  }
+}

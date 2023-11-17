@@ -1,0 +1,86 @@
+meta {
+  name: post--crm-v3-objects-emails-search
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/emails/search
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "after": "<integer>",
+    "filterGroups": [
+      {
+        "filters": [
+          {
+            "operator": "NEQ",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          },
+          {
+            "operator": "NOT_IN",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          }
+        ]
+      },
+      {
+        "filters": [
+          {
+            "operator": "BETWEEN",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          },
+          {
+            "operator": "LT",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          }
+        ]
+      }
+    ],
+    "limit": "<integer>",
+    "properties": [
+      "<string>",
+      "<string>"
+    ],
+    "sorts": [
+      "<string>",
+      "<string>"
+    ],
+    "query": "<string>"
+  }
+}

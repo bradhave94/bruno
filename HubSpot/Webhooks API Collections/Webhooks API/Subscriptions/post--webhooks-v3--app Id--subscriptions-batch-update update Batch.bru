@@ -1,0 +1,35 @@
+meta {
+  name: post--webhooks-v3--app Id--subscriptions-batch-update update Batch
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/webhooks/v3/:appId/subscriptions/batch/update
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "active": "<boolean>",
+        "id": "<integer>"
+      },
+      {
+        "active": "<boolean>",
+        "id": "<integer>"
+      }
+    ]
+  }
+}

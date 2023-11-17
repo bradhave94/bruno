@@ -1,0 +1,19 @@
+meta {
+  name: delete--webhooks-v3--app Id--subscriptions--subscription Id- archive
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/webhooks/v3/:appId/subscriptions/:subscriptionId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: */*
+}

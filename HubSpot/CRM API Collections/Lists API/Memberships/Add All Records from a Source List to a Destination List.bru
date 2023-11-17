@@ -7,7 +7,11 @@ meta {
 put {
   url: {{baseUrl}}/crm/v3/lists/:listId/memberships/add-from/:sourceListId
   body: none
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

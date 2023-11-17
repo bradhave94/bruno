@@ -1,0 +1,19 @@
+meta {
+  name: Get calling settings
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/extensions/calling/:appId/settings
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

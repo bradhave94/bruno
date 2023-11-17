@@ -1,0 +1,38 @@
+meta {
+  name: Get all marketing emails for a HubSpot account-
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/marketing/v3/emails/?createdAt=<dateTime>&createdAfter=<dateTime>&createdBefore=<dateTime>&updatedAt=<dateTime>&updatedAfter=<dateTime>&updatedBefore=<dateTime>&sort=<string>&sort=<string>&after=<string>&limit=<integer>&includeStats=<boolean>&type=OPTIN_EMAIL&isPublished=<boolean>&includedProperties=<string>&includedProperties=<string>&archived=<boolean>
+  body: none
+  auth: bearer
+}
+
+query {
+  createdAt: <dateTime>
+  createdAfter: <dateTime>
+  createdBefore: <dateTime>
+  updatedAt: <dateTime>
+  updatedAfter: <dateTime>
+  updatedBefore: <dateTime>
+  sort: <string>
+  sort: <string>
+  after: <string>
+  limit: <integer>
+  includeStats: <boolean>
+  type: OPTIN_EMAIL
+  isPublished: <boolean>
+  includedProperties: <string>
+  includedProperties: <string>
+  archived: <boolean>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

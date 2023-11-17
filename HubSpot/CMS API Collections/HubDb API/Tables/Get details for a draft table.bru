@@ -7,12 +7,16 @@ meta {
 get {
   url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/draft?includeForeignIds=<boolean>&archived=<boolean>
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
   includeForeignIds: <boolean>
   archived: <boolean>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

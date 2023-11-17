@@ -1,0 +1,19 @@
+meta {
+  name: get--crm-v3-extensions-calling--app Id--settings-recording
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/extensions/calling/:appId/settings/recording
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

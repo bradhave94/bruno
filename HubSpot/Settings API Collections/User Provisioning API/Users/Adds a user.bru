@@ -1,0 +1,33 @@
+meta {
+  name: Adds a user
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/settings/v3/users/
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "email": "<string>",
+    "primaryTeamId": "<string>",
+    "sendWelcomeEmail": "<boolean>",
+    "roleId": "<string>",
+    "secondaryTeamIds": [
+      "<string>",
+      "<string>"
+    ]
+  }
+}

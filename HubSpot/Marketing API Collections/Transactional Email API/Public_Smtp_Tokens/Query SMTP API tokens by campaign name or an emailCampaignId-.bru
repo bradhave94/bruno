@@ -1,0 +1,26 @@
+meta {
+  name: Query SMTP API tokens by campaign name or an emailCampaignId-
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/marketing/v3/transactional/smtp-tokens?campaignName=<string>&emailCampaignId=<string>&after=<string>&limit=<integer>
+  body: none
+  auth: bearer
+}
+
+query {
+  campaignName: <string>
+  emailCampaignId: <string>
+  after: <string>
+  limit: <integer>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

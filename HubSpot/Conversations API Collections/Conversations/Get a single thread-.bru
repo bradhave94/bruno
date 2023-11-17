@@ -1,0 +1,24 @@
+meta {
+  name: Get a single thread-
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/conversations/v3/conversations/threads/:threadId?archived=<boolean>&property=<string>
+  body: none
+  auth: bearer
+}
+
+query {
+  archived: <boolean>
+  property: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

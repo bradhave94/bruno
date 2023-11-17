@@ -1,0 +1,41 @@
+meta {
+  name: Update a batch of notes
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/notes/batch/update
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "sit__": "<string>",
+          "anim_9": "<string>",
+          "veniam_c": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "velit72": "<string>"
+        }
+      }
+    ]
+  }
+}

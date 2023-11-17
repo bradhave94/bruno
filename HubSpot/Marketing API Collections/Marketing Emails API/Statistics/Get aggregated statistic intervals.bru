@@ -1,0 +1,27 @@
+meta {
+  name: Get aggregated statistic intervals
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/marketing/v3/emails/statistics/histogram?interval=YEAR&startTimestamp=<string>&endTimestamp=<string>&emailIds=<long>&emailIds=<long>
+  body: none
+  auth: bearer
+}
+
+query {
+  interval: YEAR
+  startTimestamp: <string>
+  endTimestamp: <string>
+  emailIds: <long>
+  emailIds: <long>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

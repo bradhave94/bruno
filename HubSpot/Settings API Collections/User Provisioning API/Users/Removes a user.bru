@@ -1,0 +1,23 @@
+meta {
+  name: Removes a user
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/settings/v3/users/:userId?idProperty=<string>
+  body: none
+  auth: bearer
+}
+
+query {
+  idProperty: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: */*
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get the daily API usage and limits for a HubSpot account-
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/account-info/v3/api-usage/daily
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

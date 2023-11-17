@@ -1,0 +1,28 @@
+meta {
+  name: post--webhooks-v3--app Id--subscriptions create
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/webhooks/v3/:appId/subscriptions
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "eventType": "conversation.newMessage",
+    "propertyName": "<string>",
+    "active": "<boolean>"
+  }
+}

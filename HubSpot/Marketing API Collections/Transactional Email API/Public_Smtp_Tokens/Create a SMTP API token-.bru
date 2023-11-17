@@ -1,0 +1,27 @@
+meta {
+  name: Create a SMTP API token-
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/marketing/v3/transactional/smtp-tokens
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "campaignName": "<string>",
+    "createContact": "<boolean>"
+  }
+}

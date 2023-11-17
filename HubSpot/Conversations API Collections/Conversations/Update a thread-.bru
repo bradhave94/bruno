@@ -1,0 +1,31 @@
+meta {
+  name: Update a thread-
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{baseUrl}}/conversations/v3/conversations/threads/:threadId?archived=<boolean>
+  body: json
+  auth: bearer
+}
+
+query {
+  archived: <boolean>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "status": "CLOSED",
+    "archived": "<boolean>"
+  }
+}

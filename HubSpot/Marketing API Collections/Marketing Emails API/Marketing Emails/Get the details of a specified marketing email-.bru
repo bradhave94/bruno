@@ -1,0 +1,26 @@
+meta {
+  name: Get the details of a specified marketing email-
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/marketing/v3/emails/:emailId?includeStats=<boolean>&includedProperties=<string>&includedProperties=<string>&archived=<boolean>
+  body: none
+  auth: bearer
+}
+
+query {
+  includeStats: <boolean>
+  includedProperties: <string>
+  includedProperties: <string>
+  archived: <boolean>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

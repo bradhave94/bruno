@@ -1,0 +1,19 @@
+meta {
+  name: Archives a thread-
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/conversations/v3/conversations/threads/:threadId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: */*
+}

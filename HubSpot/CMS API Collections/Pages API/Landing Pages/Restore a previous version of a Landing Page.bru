@@ -7,7 +7,11 @@ meta {
 post {
   url: {{baseUrl}}/cms/v3/pages/landing-pages/:objectId/revisions/:revisionId/restore
   body: none
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

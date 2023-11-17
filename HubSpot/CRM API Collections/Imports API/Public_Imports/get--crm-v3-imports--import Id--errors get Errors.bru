@@ -7,12 +7,16 @@ meta {
 get {
   url: {{baseUrl}}/crm/v3/imports/:importId/errors?after=<string>&limit=<integer>
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
   after: <string>
   limit: <integer>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

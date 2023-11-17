@@ -1,0 +1,27 @@
+meta {
+  name: post--communication-preferences-v3-status-email-bulk
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/communication-preferences/v3/status/email/bulk
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  [
+    "<string>",
+    "<string>"
+  ]
+}

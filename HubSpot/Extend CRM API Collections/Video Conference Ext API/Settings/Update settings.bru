@@ -1,0 +1,30 @@
+meta {
+  name: Update settings
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/crm/v3/extensions/videoconferencing/settings/:appId
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "createMeetingUrl": "<string>",
+    "updateMeetingUrl": "<string>",
+    "deleteMeetingUrl": "<string>",
+    "userVerifyUrl": "<string>",
+    "fetchAccountsUri": "<string>"
+  }
+}

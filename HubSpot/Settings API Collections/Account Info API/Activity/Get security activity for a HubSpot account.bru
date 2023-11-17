@@ -1,0 +1,26 @@
+meta {
+  name: Get security activity for a HubSpot account
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/account-info/v3/activity/security?after=<string>&limit=<integer>&userId=<integer>&fromTimestamp=<long>
+  body: none
+  auth: bearer
+}
+
+query {
+  after: <string>
+  limit: <integer>
+  userId: <integer>
+  fromTimestamp: <long>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Accept: application/json
+}

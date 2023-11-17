@@ -1,0 +1,179 @@
+meta {
+  name: Update a marketing email-
+  type: http
+  seq: 15
+}
+
+patch {
+  url: {{baseUrl}}/marketing/v3/emails/:emailId?archived=<boolean>
+  body: json
+  auth: bearer
+}
+
+query {
+  archived: <boolean>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "content": {
+      "templatePath": "<string>",
+      "plainTextVersion": "<string>",
+      "widgets": {
+        "Excepteur_8": {},
+        "in15": {},
+        "tempor_0": {}
+      },
+      "widgetContainers": {
+        "fugiat_f8": {},
+        "labore9": {},
+        "in74c": {}
+      },
+      "flexAreas": {
+        "commodoed3": {},
+        "laborea8": {},
+        "ut_5": {}
+      },
+      "styleSettings": {},
+      "smartFields": {
+        "culpaf3": {},
+        "proident2f": {}
+      },
+      "themeSettingsValues": {
+        "commodo2aa": {}
+      }
+    },
+    "from": {
+      "fromName": "<string>",
+      "replyTo": "<string>",
+      "customReplyTo": "<string>"
+    },
+    "id": "<string>",
+    "name": "<string>",
+    "sendOnPublish": "<boolean>",
+    "state": "RSS_TO_EMAIL_DRAFT",
+    "subcategory": "<string>",
+    "subject": "<string>",
+    "to": {
+      "contactLists": {
+        "include": [
+          "<long>",
+          "<long>"
+        ],
+        "exclude": [
+          "<long>",
+          "<long>"
+        ]
+      },
+      "contactIds": {
+        "include": [
+          "<long>",
+          "<long>"
+        ],
+        "exclude": [
+          "<long>",
+          "<long>"
+        ]
+      },
+      "limitSendFrequency": "<boolean>",
+      "suppressGraymail": "<boolean>"
+    },
+    "createdById": "<integer>",
+    "type": "RESUBSCRIBE_EMAIL",
+    "activeDomain": "<string>",
+    "archived": "<boolean>",
+    "folderId": "<long>",
+    "feedbackSurveyId": "<integer>",
+    "stats": {
+      "counters": {
+        "occaecat_35": "<long>",
+        "esse_dae": "<long>",
+        "aliquip_9b": "<long>"
+      },
+      "deviceBreakdown": {
+        "ad_9": {
+          "ea586": "<long>",
+          "amet_cce": "<long>"
+        },
+        "exercitation_2f": {
+          "ut_2": "<long>",
+          "eiusmod_d1": "<long>"
+        }
+      },
+      "qualifierStats": {
+        "Duis_4": {
+          "qui_e3": "<long>",
+          "laborisf": "<long>"
+        },
+        "Ut_2": {
+          "doloref": "<long>"
+        },
+        "sunt_3": {
+          "qui045": "<long>",
+          "nostrud1": "<long>"
+        }
+      },
+      "ratios": {
+        "eiusmode34": "<number>",
+        "fugiat_41": "<number>"
+      }
+    },
+    "testing": {
+      "testId": "<long>",
+      "hoursToWait": "<integer>",
+      "abSuccessMetric": "OPENS_BY_DELIVERED",
+      "abSampleSizeDefault": "variant",
+      "abStatus": "automated_master",
+      "abTestPercentage": "<integer>",
+      "abSamplingDefault": "master"
+    },
+    "subscriptionDetails": {
+      "subscriptionId": "<long>",
+      "preferencesGroupId": "<long>",
+      "officeLocationId": "<string>"
+    },
+    "updatedById": "<integer>",
+    "publishedById": "<integer>",
+    "language": "bo-in",
+    "campaign": "<string>",
+    "webversion": {
+      "slug": "<string>",
+      "domain": "<string>",
+      "title": "<string>",
+      "metaDescription": "<string>",
+      "redirectToUrl": "<string>",
+      "redirectToPageId": "<long>",
+      "expiresAt": "<dateTime>"
+    },
+    "rssData": {
+      "maxEntries": "<integer>",
+      "timing": {
+        "laborisfe_": {},
+        "ipsum2": {}
+      },
+      "url": "<string>",
+      "hubspotBlogId": "<long>",
+      "blogEmailType": "<string>",
+      "blogImageMaxWidth": "<integer>",
+      "rssEntryTemplate": "<string>",
+      "useHeadlineAsSubject": "<boolean>",
+      "blogLayout": "<string>"
+    },
+    "isTransactional": "<boolean>",
+    "isPublished": "<boolean>",
+    "publishDate": "<dateTime>",
+    "updatedAt": "<dateTime>",
+    "createdAt": "<dateTime>",
+    "deletedAt": "<dateTime>",
+    "publishedAt": "<dateTime>"
+  }
+}

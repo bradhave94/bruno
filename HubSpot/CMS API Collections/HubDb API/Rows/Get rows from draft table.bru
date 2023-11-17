@@ -7,7 +7,7 @@ meta {
 get {
   url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/rows/draft?sort=<string>&sort=<string>&after=<string>&limit=<integer>&properties=<string>&properties=<string>
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
@@ -17,6 +17,10 @@ query {
   limit: <integer>
   properties: <string>
   properties: <string>
+}
+
+auth:bearer {
+  token: {{LL_PA}}
 }
 
 headers {

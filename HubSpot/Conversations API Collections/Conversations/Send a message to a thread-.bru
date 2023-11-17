@@ -1,0 +1,73 @@
+meta {
+  name: Send a message to a thread-
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/conversations/v3/conversations/threads/:threadId/messages
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "attachments": [],
+    "channelAccountId": "<string>",
+    "channelId": "<string>",
+    "recipients": [
+      {
+        "deliveryIdentifiers": [
+          {
+            "type": "<string>",
+            "value": "<string>"
+          },
+          {
+            "type": "<string>",
+            "value": "<string>"
+          }
+        ],
+        "actorId": "<string>",
+        "name": "<string>",
+        "recipientField": "<string>",
+        "deliveryIdentifier": {
+          "type": "<string>",
+          "value": "<string>"
+        }
+      },
+      {
+        "deliveryIdentifiers": [
+          {
+            "type": "<string>",
+            "value": "<string>"
+          },
+          {
+            "type": "<string>",
+            "value": "<string>"
+          }
+        ],
+        "actorId": "<string>",
+        "name": "<string>",
+        "recipientField": "<string>",
+        "deliveryIdentifier": {
+          "type": "<string>",
+          "value": "<string>"
+        }
+      }
+    ],
+    "senderActorId": "<string>",
+    "text": "<string>",
+    "type": "MESSAGE",
+    "richText": "<string>",
+    "subject": "<string>"
+  }
+}

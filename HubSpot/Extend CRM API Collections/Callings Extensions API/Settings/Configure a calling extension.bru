@@ -1,0 +1,31 @@
+meta {
+  name: Configure a calling extension
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/extensions/calling/:appId/settings
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{LL_PA}}
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "name": "<string>",
+    "url": "<string>",
+    "height": "<integer>",
+    "width": "<integer>",
+    "isReady": "<boolean>",
+    "supportsCustomObjects": "<boolean>"
+  }
+}
