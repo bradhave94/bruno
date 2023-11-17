@@ -1,0 +1,15 @@
+meta {
+  name: Add All Records from a Source List to a Destination List
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/crm/v3/lists/:listId/memberships/add-from/:sourceListId
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: */*
+}

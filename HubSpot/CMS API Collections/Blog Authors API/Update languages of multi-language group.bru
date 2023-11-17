@@ -1,0 +1,25 @@
+meta {
+  name: Update languages of multi-language group
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/blogs/authors/multi-language/update-languages
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "languages": {
+      "esse0_": "<string>"
+    },
+    "primaryId": "<string>"
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Read an owner by given -id- or -userId-
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/owners/:ownerId?idProperty=id&archived=false
+  body: none
+  auth: none
+}
+
+query {
+  idProperty: id
+  archived: false
+}
+
+headers {
+  Accept: application/json
+}

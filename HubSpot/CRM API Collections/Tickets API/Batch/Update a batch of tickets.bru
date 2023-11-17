@@ -1,0 +1,35 @@
+meta {
+  name: Update a batch of tickets
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/tickets/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "in__63": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "dolore2c": "<string>"
+        }
+      }
+    ]
+  }
+}

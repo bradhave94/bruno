@@ -1,0 +1,87 @@
+meta {
+  name: Update a card
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/extensions/cards-dev/:appId/:cardId
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "title": "<string>",
+    "fetch": {
+      "objectTypes": [
+        {
+          "name": "companies",
+          "propertiesToSend": [
+            "<string>",
+            "<string>"
+          ]
+        },
+        {
+          "name": "tickets",
+          "propertiesToSend": [
+            "<string>",
+            "<string>"
+          ]
+        }
+      ],
+      "cardType": "EXTERNAL",
+      "targetUrl": "<string>",
+      "serverlessFunction": "<string>"
+    },
+    "display": {
+      "properties": [
+        {
+          "dataType": "EMAIL",
+          "label": "<string>",
+          "name": "<string>",
+          "options": [
+            {
+              "label": "<string>",
+              "name": "<string>",
+              "type": "SUCCESS"
+            },
+            {
+              "label": "<string>",
+              "name": "<string>",
+              "type": "DANGER"
+            }
+          ]
+        },
+        {
+          "dataType": "STRING",
+          "label": "<string>",
+          "name": "<string>",
+          "options": [
+            {
+              "label": "<string>",
+              "name": "<string>",
+              "type": "INFO"
+            },
+            {
+              "label": "<string>",
+              "name": "<string>",
+              "type": "DEFAULT"
+            }
+          ]
+        }
+      ]
+    },
+    "actions": {
+      "baseUrls": [
+        "<string>",
+        "<string>"
+      ]
+    }
+  }
+}

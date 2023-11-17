@@ -1,0 +1,28 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/objects/:objectType/:objectId?idProperty=<string>
+  body: json
+  auth: none
+}
+
+query {
+  idProperty: <string>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "properties": {
+      "officia7": "<string>"
+    }
+  }
+}

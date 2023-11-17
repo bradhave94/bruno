@@ -1,0 +1,25 @@
+meta {
+  name: Attach a Blog Tag to a multi-language group
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/blogs/tags/multi-language/attach-to-lang-group
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "id": "<string>",
+    "language": "<string>",
+    "primaryId": "<string>",
+    "primaryLanguage": "<string>"
+  }
+}

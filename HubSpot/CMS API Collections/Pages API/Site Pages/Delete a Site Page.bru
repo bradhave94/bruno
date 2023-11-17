@@ -1,0 +1,19 @@
+meta {
+  name: Delete a Site Page
+  type: http
+  seq: 26
+}
+
+delete {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/:objectId?archived=<boolean>
+  body: none
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Accept: */*
+}

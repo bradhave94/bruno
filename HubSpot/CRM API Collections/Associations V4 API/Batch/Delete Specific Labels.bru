@@ -1,0 +1,59 @@
+meta {
+  name: Delete Specific Labels
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v4/associations/:fromObjectType/:toObjectType/batch/labels/archive
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "from": {
+          "id": "<string>"
+        },
+        "to": {
+          "id": "<string>"
+        },
+        "types": [
+          {
+            "associationCategory": "INTEGRATOR_DEFINED",
+            "associationTypeId": "<integer>"
+          },
+          {
+            "associationCategory": "HUBSPOT_DEFINED",
+            "associationTypeId": "<integer>"
+          }
+        ]
+      },
+      {
+        "from": {
+          "id": "<string>"
+        },
+        "to": {
+          "id": "<string>"
+        },
+        "types": [
+          {
+            "associationCategory": "HUBSPOT_DEFINED",
+            "associationTypeId": "<integer>"
+          },
+          {
+            "associationCategory": "HUBSPOT_DEFINED",
+            "associationTypeId": "<integer>"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Clone a table
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/draft/clone
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "copyRows": "<boolean>",
+    "newName": "<string>",
+    "newLabel": "<string>"
+  }
+}

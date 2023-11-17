@@ -1,0 +1,31 @@
+meta {
+  name: Read
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v4/associations/:fromObjectType/:toObjectType/batch/read
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "after": "<string>"
+      },
+      {
+        "id": "<string>",
+        "after": "<string>"
+      }
+    ]
+  }
+}

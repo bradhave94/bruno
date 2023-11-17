@@ -1,0 +1,40 @@
+meta {
+  name: Update a batch of taxes
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/taxes/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "inc16": "<string>",
+          "nostrud8f": "<string>",
+          "laboris02": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "nulla_ab": "<string>",
+          "pariaturc": "<string>",
+          "aliqua_": "<string>",
+          "estca": "<string>"
+        }
+      }
+    ]
+  }
+}

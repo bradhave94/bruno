@@ -1,0 +1,19 @@
+meta {
+  name: Delete a Blog Post
+  type: http
+  seq: 23
+}
+
+delete {
+  url: {{baseUrl}}/cms/v3/blogs/posts/:objectId?archived=<boolean>
+  body: none
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Accept: */*
+}

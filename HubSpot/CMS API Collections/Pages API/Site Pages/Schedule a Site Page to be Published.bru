@@ -1,0 +1,23 @@
+meta {
+  name: Schedule a Site Page to be Published
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/schedule
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "id": "<string>",
+    "publishDate": "<dateTime>"
+  }
+}

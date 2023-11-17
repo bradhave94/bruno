@@ -1,0 +1,29 @@
+meta {
+  name: Update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/objects/companies/:companyId?idProperty=<string>
+  body: json
+  auth: none
+}
+
+query {
+  idProperty: <string>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "properties": {
+      "reprehenderitd7": "<string>",
+      "consequat_369": "<string>"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Clone a row
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/rows/:rowId/draft/clone
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

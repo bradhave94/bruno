@@ -1,0 +1,15 @@
+meta {
+  name: Cancel an active import
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/imports/:importId/cancel
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

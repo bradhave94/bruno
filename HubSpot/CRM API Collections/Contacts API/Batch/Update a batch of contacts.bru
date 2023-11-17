@@ -1,0 +1,36 @@
+meta {
+  name: Update a batch of contacts
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/contacts/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "adipisicingd": "<string>",
+          "proidentf": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "veniam_a": "<string>"
+        }
+      }
+    ]
+  }
+}

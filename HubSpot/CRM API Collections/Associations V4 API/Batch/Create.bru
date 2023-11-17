@@ -1,0 +1,59 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/crm/v4/associations/:fromObjectType/:toObjectType/batch/create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "from": {
+          "id": "<string>"
+        },
+        "to": {
+          "id": "<string>"
+        },
+        "types": [
+          {
+            "associationCategory": "INTEGRATOR_DEFINED",
+            "associationTypeId": "<integer>"
+          },
+          {
+            "associationCategory": "HUBSPOT_DEFINED",
+            "associationTypeId": "<integer>"
+          }
+        ]
+      },
+      {
+        "from": {
+          "id": "<string>"
+        },
+        "to": {
+          "id": "<string>"
+        },
+        "types": [
+          {
+            "associationCategory": "HUBSPOT_DEFINED",
+            "associationTypeId": "<integer>"
+          },
+          {
+            "associationCategory": "HUBSPOT_DEFINED",
+            "associationTypeId": "<integer>"
+          }
+        ]
+      }
+    ]
+  }
+}

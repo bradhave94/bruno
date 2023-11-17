@@ -1,0 +1,15 @@
+meta {
+  name: Retrieve the full draft version of the Site Page
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/:objectId/draft
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

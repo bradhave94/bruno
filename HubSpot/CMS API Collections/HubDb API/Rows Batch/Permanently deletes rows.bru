@@ -1,0 +1,25 @@
+meta {
+  name: Permanently deletes rows
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/rows/draft/batch/purge
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "inputs": [
+      "<string>",
+      "<string>"
+    ]
+  }
+}

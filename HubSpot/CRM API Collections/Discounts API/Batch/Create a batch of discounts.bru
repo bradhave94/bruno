@@ -1,0 +1,98 @@
+meta {
+  name: Create a batch of discounts
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/discounts/batch/create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "associations": [
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          },
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "cupidatat_7": "<string>"
+        }
+      },
+      {
+        "associations": [
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          },
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "irure3": "<string>",
+          "deserunt_": "<string>"
+        }
+      }
+    ]
+  }
+}

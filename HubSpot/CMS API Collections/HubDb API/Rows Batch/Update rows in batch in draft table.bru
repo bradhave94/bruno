@@ -1,0 +1,46 @@
+meta {
+  name: Update rows in batch in draft table
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/rows/draft/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "values": {
+          "dobe": {}
+        },
+        "path": "<string>",
+        "name": "<string>",
+        "childTableId": "<integer>",
+        "displayIndex": "<integer>"
+      },
+      {
+        "id": "<string>",
+        "values": {
+          "utf": {},
+          "Lorem7de": {},
+          "exercitationf44": {},
+          "est__be": {}
+        },
+        "path": "<string>",
+        "name": "<string>",
+        "childTableId": "<integer>",
+        "displayIndex": "<integer>"
+      }
+    ]
+  }
+}

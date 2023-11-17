@@ -1,0 +1,38 @@
+meta {
+  name: Update a batch of objects
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/:objectType/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "Excepteurbe": "<string>",
+          "minim_c4": "<string>",
+          "ipsumc": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "aute_ab": "<string>",
+          "officia_": "<string>"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+meta {
+  name: Update languages of multi-language group
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/multi-language/update-languages
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "languages": {
+      "sint6ea": "<string>",
+      "officiab8": "<string>",
+      "nulla_40d": "<string>",
+      "aliqua_5b3": "<string>",
+      "et_e": "<string>"
+    },
+    "primaryId": "<string>"
+  }
+}

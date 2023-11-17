@@ -1,0 +1,32 @@
+meta {
+  name: Update a Blog Tag
+  type: http
+  seq: 13
+}
+
+patch {
+  url: {{baseUrl}}/cms/v3/blogs/tags/:objectId?archived=<boolean>
+  body: json
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "created": "<dateTime>",
+    "deletedAt": "<dateTime>",
+    "id": "<string>",
+    "language": "sw-ke",
+    "name": "<string>",
+    "translatedFromId": "<long>",
+    "updated": "<dateTime>"
+  }
+}

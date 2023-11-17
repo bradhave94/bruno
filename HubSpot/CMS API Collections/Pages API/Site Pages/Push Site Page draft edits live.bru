@@ -1,0 +1,15 @@
+meta {
+  name: Push Site Page draft edits live
+  type: http
+  seq: 22
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/:objectId/draft/push-live
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: */*
+}

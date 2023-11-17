@@ -1,0 +1,58 @@
+meta {
+  name: Create
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/contacts
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "associations": [
+      {
+        "to": {
+          "id": "<string>"
+        },
+        "types": [
+          {
+            "associationCategory": "USER_DEFINED",
+            "associationTypeId": "<integer>"
+          },
+          {
+            "associationCategory": "HUBSPOT_DEFINED",
+            "associationTypeId": "<integer>"
+          }
+        ]
+      },
+      {
+        "to": {
+          "id": "<string>"
+        },
+        "types": [
+          {
+            "associationCategory": "HUBSPOT_DEFINED",
+            "associationTypeId": "<integer>"
+          },
+          {
+            "associationCategory": "INTEGRATOR_DEFINED",
+            "associationTypeId": "<integer>"
+          }
+        ]
+      }
+    ],
+    "properties": {
+      "ea_7b": "<string>",
+      "ullamco9": "<string>",
+      "velitb7": "<string>"
+    }
+  }
+}

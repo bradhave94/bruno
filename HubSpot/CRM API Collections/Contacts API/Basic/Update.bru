@@ -1,0 +1,24 @@
+meta {
+  name: Update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/objects/contacts/:contactId
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "properties": {
+      "sit3f7": "<string>"
+    }
+  }
+}

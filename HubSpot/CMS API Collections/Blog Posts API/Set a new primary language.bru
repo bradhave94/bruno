@@ -1,0 +1,22 @@
+meta {
+  name: Set a new primary language
+  type: http
+  seq: 21
+}
+
+put {
+  url: {{baseUrl}}/cms/v3/blogs/posts/multi-language/set-new-lang-primary
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "id": "<string>"
+  }
+}

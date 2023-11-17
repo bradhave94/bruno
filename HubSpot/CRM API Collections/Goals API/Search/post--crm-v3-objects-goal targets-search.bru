@@ -1,0 +1,82 @@
+meta {
+  name: post--crm-v3-objects-goal targets-search
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/goal_targets/search
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "after": "<integer>",
+    "filterGroups": [
+      {
+        "filters": [
+          {
+            "operator": "NOT_IN",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          },
+          {
+            "operator": "EQ",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          }
+        ]
+      },
+      {
+        "filters": [
+          {
+            "operator": "EQ",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          },
+          {
+            "operator": "NOT_IN",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          }
+        ]
+      }
+    ],
+    "limit": "<integer>",
+    "properties": [
+      "<string>",
+      "<string>"
+    ],
+    "sorts": [
+      "<string>",
+      "<string>"
+    ],
+    "query": "<string>"
+  }
+}

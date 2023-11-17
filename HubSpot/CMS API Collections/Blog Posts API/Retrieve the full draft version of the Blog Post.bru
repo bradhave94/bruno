@@ -1,0 +1,15 @@
+meta {
+  name: Retrieve the full draft version of the Blog Post
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/blogs/posts/:objectId/draft
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Archive
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/crm/v3/objects/taxes/:taxId
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: */*
+}

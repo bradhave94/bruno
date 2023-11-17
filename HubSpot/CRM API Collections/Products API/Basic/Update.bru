@@ -1,0 +1,28 @@
+meta {
+  name: Update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/objects/products/:productId?idProperty=<string>
+  body: json
+  auth: none
+}
+
+query {
+  idProperty: <string>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "properties": {
+      "tempor_d9": "<string>"
+    }
+  }
+}

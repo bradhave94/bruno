@@ -1,0 +1,25 @@
+meta {
+  name: Attach a landing page to a multi-language group
+  type: http
+  seq: 21
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/multi-language/attach-to-lang-group
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "id": "<string>",
+    "language": "<string>",
+    "primaryId": "<string>",
+    "primaryLanguage": "<string>"
+  }
+}

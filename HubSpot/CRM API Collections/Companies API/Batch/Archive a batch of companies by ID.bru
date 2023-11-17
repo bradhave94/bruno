@@ -1,0 +1,29 @@
+meta {
+  name: Archive a batch of companies by ID
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/companies/batch/archive
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>"
+      },
+      {
+        "id": "<string>"
+      }
+    ]
+  }
+}

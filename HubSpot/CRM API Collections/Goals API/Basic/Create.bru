@@ -1,0 +1,57 @@
+meta {
+  name: Create
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/goal_targets
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "associations": [
+      {
+        "to": {
+          "id": "<string>"
+        },
+        "types": [
+          {
+            "associationCategory": "USER_DEFINED",
+            "associationTypeId": "<integer>"
+          },
+          {
+            "associationCategory": "USER_DEFINED",
+            "associationTypeId": "<integer>"
+          }
+        ]
+      },
+      {
+        "to": {
+          "id": "<string>"
+        },
+        "types": [
+          {
+            "associationCategory": "INTEGRATOR_DEFINED",
+            "associationTypeId": "<integer>"
+          },
+          {
+            "associationCategory": "USER_DEFINED",
+            "associationTypeId": "<integer>"
+          }
+        ]
+      }
+    ],
+    "properties": {
+      "dolorea7": "<string>",
+      "cupidatat_0": "<string>"
+    }
+  }
+}

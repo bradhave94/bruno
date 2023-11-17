@@ -1,0 +1,15 @@
+meta {
+  name: List association types
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/associations/:fromObjectType/:toObjectType/types
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

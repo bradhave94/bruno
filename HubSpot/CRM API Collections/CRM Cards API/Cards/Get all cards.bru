@@ -1,0 +1,15 @@
+meta {
+  name: Get all cards
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/extensions/cards-dev/:appId
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

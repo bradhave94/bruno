@@ -1,0 +1,20 @@
+meta {
+  name: get--crm-v3-imports--import Id--errors get Errors
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/imports/:importId/errors?after=<string>&limit=<integer>
+  body: none
+  auth: none
+}
+
+query {
+  after: <string>
+  limit: <integer>
+}
+
+headers {
+  Accept: application/json
+}

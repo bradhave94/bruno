@@ -1,0 +1,15 @@
+meta {
+  name: Retrieves a previous version of a Blog
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/blog-settings/settings/:blogId/revisions/:revisionId
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

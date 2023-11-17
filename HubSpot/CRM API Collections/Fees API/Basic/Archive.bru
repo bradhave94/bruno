@@ -1,0 +1,15 @@
+meta {
+  name: Archive
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/crm/v3/objects/fees/:feeId
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: */*
+}

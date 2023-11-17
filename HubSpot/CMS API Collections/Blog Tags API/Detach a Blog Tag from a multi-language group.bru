@@ -1,0 +1,22 @@
+meta {
+  name: Detach a Blog Tag from a multi-language group
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/blogs/tags/multi-language/detach-from-lang-group
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "id": "<string>"
+  }
+}

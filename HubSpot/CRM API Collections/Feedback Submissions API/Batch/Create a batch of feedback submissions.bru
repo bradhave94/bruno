@@ -1,0 +1,100 @@
+meta {
+  name: Create a batch of feedback submissions
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/feedback_submissions/batch/create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "associations": [
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          },
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "amet4": "<string>",
+          "nostrud37": "<string>"
+        }
+      },
+      {
+        "associations": [
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          },
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "culpa_2a": "<string>",
+          "eiusmod_8": "<string>",
+          "ex5": "<string>"
+        }
+      }
+    ]
+  }
+}

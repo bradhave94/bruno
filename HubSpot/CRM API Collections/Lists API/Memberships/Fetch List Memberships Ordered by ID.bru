@@ -1,0 +1,21 @@
+meta {
+  name: Fetch List Memberships Ordered by ID
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/lists/:listId/memberships?after=<string>&before=<string>&limit=100
+  body: none
+  auth: none
+}
+
+query {
+  after: <string>
+  before: <string>
+  limit: 100
+}
+
+headers {
+  Accept: application/json
+}

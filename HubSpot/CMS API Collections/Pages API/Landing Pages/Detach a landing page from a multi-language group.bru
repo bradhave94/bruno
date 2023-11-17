@@ -1,0 +1,22 @@
+meta {
+  name: Detach a landing page from a multi-language group
+  type: http
+  seq: 25
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/multi-language/detach-from-lang-group
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "id": "<string>"
+  }
+}

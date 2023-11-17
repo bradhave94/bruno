@@ -1,0 +1,27 @@
+meta {
+  name: List
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/objects/goal_targets?limit=10&after=<string>&properties=<string>&properties=<string>&propertiesWithHistory=<string>&propertiesWithHistory=<string>&associations=<string>&associations=<string>&archived=false
+  body: none
+  auth: none
+}
+
+query {
+  limit: 10
+  after: <string>
+  properties: <string>
+  properties: <string>
+  propertiesWithHistory: <string>
+  propertiesWithHistory: <string>
+  associations: <string>
+  associations: <string>
+  archived: false
+}
+
+headers {
+  Accept: application/json
+}

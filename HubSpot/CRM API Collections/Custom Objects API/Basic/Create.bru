@@ -1,0 +1,56 @@
+meta {
+  name: Create
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/:objectType
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "associations": [
+      {
+        "to": {
+          "id": "<string>"
+        },
+        "types": [
+          {
+            "associationCategory": "HUBSPOT_DEFINED",
+            "associationTypeId": "<integer>"
+          },
+          {
+            "associationCategory": "HUBSPOT_DEFINED",
+            "associationTypeId": "<integer>"
+          }
+        ]
+      },
+      {
+        "to": {
+          "id": "<string>"
+        },
+        "types": [
+          {
+            "associationCategory": "INTEGRATOR_DEFINED",
+            "associationTypeId": "<integer>"
+          },
+          {
+            "associationCategory": "INTEGRATOR_DEFINED",
+            "associationTypeId": "<integer>"
+          }
+        ]
+      }
+    ],
+    "properties": {
+      "laborum1d9": "<string>"
+    }
+  }
+}

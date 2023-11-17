@@ -1,0 +1,25 @@
+meta {
+  name: Get a set of rows from draft table
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/rows/draft/batch/read
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      "<string>",
+      "<string>"
+    ]
+  }
+}

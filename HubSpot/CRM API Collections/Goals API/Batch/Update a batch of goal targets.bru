@@ -1,0 +1,35 @@
+meta {
+  name: Update a batch of goal targets
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/goal_targets/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "velit_f8": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "dolor_ac4": "<string>"
+        }
+      }
+    ]
+  }
+}

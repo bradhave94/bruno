@@ -1,0 +1,20 @@
+meta {
+  name: Retrieve a Landing Page
+  type: http
+  seq: 33
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/:objectId?archived=<boolean>&property=<string>
+  body: none
+  auth: none
+}
+
+query {
+  archived: <boolean>
+  property: <string>
+}
+
+headers {
+  Accept: application/json
+}

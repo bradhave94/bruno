@@ -1,0 +1,81 @@
+meta {
+  name: Create a new table
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/hubdb/tables
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "label": "<string>",
+    "name": "<string>",
+    "useForPages": "<boolean>",
+    "allowPublicApiAccess": "<boolean>",
+    "allowChildTables": "<boolean>",
+    "enableChildTablePages": "<boolean>",
+    "columns": [
+      {
+        "id": "<integer>",
+        "label": "<string>",
+        "name": "<string>",
+        "options": [
+          {
+            "id": "<string>",
+            "name": "<string>",
+            "order": "<integer>",
+            "type": "<string>",
+            "label": "<string>"
+          },
+          {
+            "id": "<string>",
+            "name": "<string>",
+            "order": "<integer>",
+            "type": "<string>",
+            "label": "<string>"
+          }
+        ],
+        "type": "NUMBER",
+        "foreignTableId": "<long>",
+        "foreignColumnId": "<integer>"
+      },
+      {
+        "id": "<integer>",
+        "label": "<string>",
+        "name": "<string>",
+        "options": [
+          {
+            "id": "<string>",
+            "name": "<string>",
+            "order": "<integer>",
+            "type": "<string>",
+            "label": "<string>"
+          },
+          {
+            "id": "<string>",
+            "name": "<string>",
+            "order": "<integer>",
+            "type": "<string>",
+            "label": "<string>"
+          }
+        ],
+        "type": "NULL",
+        "foreignTableId": "<long>",
+        "foreignColumnId": "<integer>"
+      }
+    ],
+    "dynamicMetaTags": {
+      "dolore487": "<integer>",
+      "voluptate_0": "<integer>"
+    }
+  }
+}

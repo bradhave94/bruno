@@ -1,0 +1,23 @@
+meta {
+  name: Merge two taxes with same type
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/taxes/merge
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "objectIdToMerge": "<string>",
+    "primaryObjectId": "<string>"
+  }
+}

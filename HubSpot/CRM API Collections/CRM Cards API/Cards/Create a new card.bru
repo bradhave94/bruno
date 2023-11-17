@@ -1,0 +1,87 @@
+meta {
+  name: Create a new card
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/extensions/cards-dev/:appId
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "actions": {
+      "baseUrls": [
+        "<string>",
+        "<string>"
+      ]
+    },
+    "display": {
+      "properties": [
+        {
+          "dataType": "CURRENCY",
+          "label": "<string>",
+          "name": "<string>",
+          "options": [
+            {
+              "label": "<string>",
+              "name": "<string>",
+              "type": "WARNING"
+            },
+            {
+              "label": "<string>",
+              "name": "<string>",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        {
+          "dataType": "EMAIL",
+          "label": "<string>",
+          "name": "<string>",
+          "options": [
+            {
+              "label": "<string>",
+              "name": "<string>",
+              "type": "INFO"
+            },
+            {
+              "label": "<string>",
+              "name": "<string>",
+              "type": "WARNING"
+            }
+          ]
+        }
+      ]
+    },
+    "fetch": {
+      "objectTypes": [
+        {
+          "name": "companies",
+          "propertiesToSend": [
+            "<string>",
+            "<string>"
+          ]
+        },
+        {
+          "name": "deals",
+          "propertiesToSend": [
+            "<string>",
+            "<string>"
+          ]
+        }
+      ],
+      "targetUrl": "<string>",
+      "cardType": "EXTERNAL",
+      "serverlessFunction": "<string>"
+    },
+    "title": "<string>"
+  }
+}

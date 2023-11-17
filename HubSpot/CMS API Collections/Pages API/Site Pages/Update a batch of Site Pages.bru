@@ -1,0 +1,26 @@
+meta {
+  name: Update a batch of Site Pages
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/batch/update?archived=<boolean>
+  body: json
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": []
+  }
+}

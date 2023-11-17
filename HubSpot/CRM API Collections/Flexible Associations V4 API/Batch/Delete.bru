@@ -1,0 +1,49 @@
+meta {
+  name: Delete
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/crm/v4/associations/:fromObjectType/:toObjectType/batch/archive
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "from": {
+          "id": "<string>"
+        },
+        "to": [
+          {
+            "id": "<string>"
+          },
+          {
+            "id": "<string>"
+          }
+        ]
+      },
+      {
+        "from": {
+          "id": "<string>"
+        },
+        "to": [
+          {
+            "id": "<string>"
+          },
+          {
+            "id": "<string>"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Delete
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/crm/v4/objects/:objectType/:objectId/associations/:toObjectType/:toObjectId
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: */*
+}

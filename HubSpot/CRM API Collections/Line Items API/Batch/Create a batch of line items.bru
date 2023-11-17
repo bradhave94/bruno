@@ -1,0 +1,97 @@
+meta {
+  name: Create a batch of line items
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/line_items/batch/create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "associations": [
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          },
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "quisd": "<string>"
+        }
+      },
+      {
+        "associations": [
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          },
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "tempor_d": "<string>"
+        }
+      }
+    ]
+  }
+}

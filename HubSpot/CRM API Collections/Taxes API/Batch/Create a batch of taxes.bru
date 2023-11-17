@@ -1,0 +1,97 @@
+meta {
+  name: Create a batch of taxes
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/taxes/batch/create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "associations": [
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          },
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "cillum_f9b": "<string>"
+        }
+      },
+      {
+        "associations": [
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          },
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "ad_032": "<string>"
+        }
+      }
+    ]
+  }
+}

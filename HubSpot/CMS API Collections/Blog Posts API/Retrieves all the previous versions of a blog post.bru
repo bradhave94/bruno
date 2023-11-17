@@ -1,0 +1,21 @@
+meta {
+  name: Retrieves all the previous versions of a blog post
+  type: http
+  seq: 20
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/blogs/posts/:objectId/revisions?after=<string>&before=<string>&limit=<integer>
+  body: none
+  auth: none
+}
+
+query {
+  after: <string>
+  before: <string>
+  limit: <integer>
+}
+
+headers {
+  Accept: application/json
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Retrieves a previous version of a Folder
+  type: http
+  seq: 31
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/folders/:objectId/revisions/:revisionId
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

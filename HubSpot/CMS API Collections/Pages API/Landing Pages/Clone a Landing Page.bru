@@ -1,0 +1,23 @@
+meta {
+  name: Clone a Landing Page
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/clone
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "id": "<string>",
+    "cloneName": "<string>"
+  }
+}

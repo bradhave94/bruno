@@ -1,0 +1,15 @@
+meta {
+  name: Delete All Records from a List
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/crm/v3/lists/:listId/memberships
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: */*
+}

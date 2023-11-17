@@ -1,0 +1,15 @@
+meta {
+  name: Get a row from the draft table
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/rows/:rowId/draft
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

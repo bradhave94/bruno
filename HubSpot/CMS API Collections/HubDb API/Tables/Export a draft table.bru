@@ -1,0 +1,19 @@
+meta {
+  name: Export a draft table
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/draft/export?format=<string>
+  body: none
+  auth: none
+}
+
+query {
+  format: <string>
+}
+
+headers {
+  Accept: application/vnd.ms-excel
+}

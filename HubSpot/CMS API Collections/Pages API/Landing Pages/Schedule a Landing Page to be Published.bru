@@ -1,0 +1,23 @@
+meta {
+  name: Schedule a Landing Page to be Published
+  type: http
+  seq: 26
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/schedule
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "id": "<string>",
+    "publishDate": "<dateTime>"
+  }
+}

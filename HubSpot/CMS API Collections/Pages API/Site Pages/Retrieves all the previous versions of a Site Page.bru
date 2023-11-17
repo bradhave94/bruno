@@ -1,0 +1,21 @@
+meta {
+  name: Retrieves all the previous versions of a Site Page
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/:objectId/revisions?after=<string>&before=<string>&limit=<integer>
+  body: none
+  auth: none
+}
+
+query {
+  after: <string>
+  before: <string>
+  limit: <integer>
+}
+
+headers {
+  Accept: application/json
+}

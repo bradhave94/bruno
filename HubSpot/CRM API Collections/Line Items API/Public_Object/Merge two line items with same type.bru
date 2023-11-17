@@ -1,0 +1,23 @@
+meta {
+  name: Merge two line items with same type
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/line_items/merge
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "objectIdToMerge": "<string>",
+    "primaryObjectId": "<string>"
+  }
+}

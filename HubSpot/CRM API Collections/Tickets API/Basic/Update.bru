@@ -1,0 +1,29 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/objects/tickets/:ticketId?idProperty=<string>
+  body: json
+  auth: none
+}
+
+query {
+  idProperty: <string>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "properties": {
+      "id580": "<string>",
+      "sed_4": "<string>"
+    }
+  }
+}

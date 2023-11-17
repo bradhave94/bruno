@@ -1,0 +1,23 @@
+meta {
+  name: Clone a Site Page
+  type: http
+  seq: 20
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/clone
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "id": "<string>",
+    "cloneName": "<string>"
+  }
+}

@@ -1,0 +1,37 @@
+meta {
+  name: Update a batch of feedback submissions
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/feedback_submissions/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "tempor_21": "<string>",
+          "irure8_1": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "qui_6f0": "<string>",
+          "laboris_de": "<string>"
+        }
+      }
+    ]
+  }
+}

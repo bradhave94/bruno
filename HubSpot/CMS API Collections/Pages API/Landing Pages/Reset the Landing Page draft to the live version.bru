@@ -1,0 +1,15 @@
+meta {
+  name: Reset the Landing Page draft to the live version
+  type: http
+  seq: 32
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/:objectId/draft/reset
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: */*
+}

@@ -1,0 +1,40 @@
+meta {
+  name: Update a batch of products
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/products/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "commodo_876": "<string>",
+          "nisi_c_": "<string>",
+          "ipsum_c97": "<string>",
+          "ullamco_8": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "Excepteur_1b9": "<string>",
+          "consequat_3": "<string>",
+          "tempor_11": "<string>"
+        }
+      }
+    ]
+  }
+}

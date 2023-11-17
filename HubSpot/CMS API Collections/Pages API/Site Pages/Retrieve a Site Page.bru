@@ -1,0 +1,20 @@
+meta {
+  name: Retrieve a Site Page
+  type: http
+  seq: 25
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/:objectId?archived=<boolean>&property=<string>
+  body: none
+  auth: none
+}
+
+query {
+  archived: <boolean>
+  property: <string>
+}
+
+headers {
+  Accept: application/json
+}

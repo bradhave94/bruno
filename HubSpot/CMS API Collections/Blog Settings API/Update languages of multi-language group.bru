@@ -1,0 +1,25 @@
+meta {
+  name: Update languages of multi-language group
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/blog-settings/settings/multi-language/update-languages
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "languages": {
+      "et637": "<string>"
+    },
+    "primaryId": "<string>"
+  }
+}

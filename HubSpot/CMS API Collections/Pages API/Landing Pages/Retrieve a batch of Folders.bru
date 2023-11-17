@@ -1,0 +1,29 @@
+meta {
+  name: Retrieve a batch of Folders
+  type: http
+  seq: 39
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/folders/batch/read?archived=<boolean>
+  body: json
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      "<string>",
+      "<string>"
+    ]
+  }
+}

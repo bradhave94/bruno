@@ -1,0 +1,24 @@
+meta {
+  name: Get rows from draft table
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/rows/draft?sort=<string>&sort=<string>&after=<string>&limit=<integer>&properties=<string>&properties=<string>
+  body: none
+  auth: none
+}
+
+query {
+  sort: <string>
+  sort: <string>
+  after: <string>
+  limit: <integer>
+  properties: <string>
+  properties: <string>
+}
+
+headers {
+  Accept: application/json
+}

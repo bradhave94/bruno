@@ -1,0 +1,15 @@
+meta {
+  name: Retrieve a Blog
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/blog-settings/settings/:blogId
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

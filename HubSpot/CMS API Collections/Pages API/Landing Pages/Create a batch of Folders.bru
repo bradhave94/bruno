@@ -1,0 +1,41 @@
+meta {
+  name: Create a batch of Folders
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/folders/batch/create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "category": "<integer>",
+        "created": "<dateTime>",
+        "deletedAt": "<dateTime>",
+        "id": "<string>",
+        "name": "<string>",
+        "parentFolderId": "<long>",
+        "updated": "<dateTime>"
+      },
+      {
+        "category": "<integer>",
+        "created": "<dateTime>",
+        "deletedAt": "<dateTime>",
+        "id": "<string>",
+        "name": "<string>",
+        "parentFolderId": "<long>",
+        "updated": "<dateTime>"
+      }
+    ]
+  }
+}

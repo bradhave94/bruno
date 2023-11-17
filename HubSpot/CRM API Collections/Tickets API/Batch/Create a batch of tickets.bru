@@ -1,0 +1,98 @@
+meta {
+  name: Create a batch of tickets
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/tickets/batch/create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "associations": [
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          },
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "esse_ed4": "<string>",
+          "incididunt_aac": "<string>"
+        }
+      },
+      {
+        "associations": [
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "HUBSPOT_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          },
+          {
+            "to": {
+              "id": "<string>"
+            },
+            "types": [
+              {
+                "associationCategory": "INTEGRATOR_DEFINED",
+                "associationTypeId": "<integer>"
+              },
+              {
+                "associationCategory": "USER_DEFINED",
+                "associationTypeId": "<integer>"
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "anim0a": "<string>"
+        }
+      }
+    ]
+  }
+}

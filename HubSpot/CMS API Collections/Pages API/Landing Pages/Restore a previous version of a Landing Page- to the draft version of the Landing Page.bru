@@ -1,0 +1,15 @@
+meta {
+  name: Restore a previous version of a Landing Page- to the draft version of the Landing Page
+  type: http
+  seq: 38
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/:objectId/revisions/:revisionId/restore-to-draft
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

@@ -1,0 +1,755 @@
+meta {
+  name: Update a Blog Post
+  type: http
+  seq: 24
+}
+
+patch {
+  url: {{baseUrl}}/cms/v3/blogs/posts/:objectId?archived=<boolean>
+  body: json
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "abStatus": "variant",
+    "abTestId": "<string>",
+    "archivedAt": "<long>",
+    "archivedInDashboard": "<boolean>",
+    "attachedStylesheets": [
+      {
+        "sint504": {},
+        "deserunt_ef": {},
+        "pariatur_c8": {},
+        "adbd": {},
+        "do0": {}
+      },
+      {
+        "nulla_c": {},
+        "magna_86": {}
+      }
+    ],
+    "authorName": "<string>",
+    "blogAuthorId": "<string>",
+    "campaign": "<string>",
+    "categoryId": "<integer>",
+    "contentGroupId": "<string>",
+    "contentTypeCategory": "10",
+    "created": "<dateTime>",
+    "createdById": "<string>",
+    "currentState": "DRAFT_AB",
+    "currentlyPublished": "<boolean>",
+    "domain": "<string>",
+    "dynamicPageDataSourceId": "<string>",
+    "dynamicPageDataSourceType": "<integer>",
+    "dynamicPageHubDbTableId": "<string>",
+    "enableDomainStylesheets": "<boolean>",
+    "enableGoogleAmpOutputOverride": "<boolean>",
+    "enableLayoutStylesheets": "<boolean>",
+    "featuredImage": "<string>",
+    "featuredImageAltText": "<string>",
+    "folderId": "<string>",
+    "footerHtml": "<string>",
+    "headHtml": "<string>",
+    "htmlTitle": "<string>",
+    "id": "<string>",
+    "includeDefaultCustomCss": "<boolean>",
+    "language": "fr-pf",
+    "layoutSections": {
+      "do_7": {
+        "cells": [
+          {
+            "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+          },
+          {
+            "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+          }
+        ],
+        "cssClass": "<string>",
+        "cssId": "<string>",
+        "cssStyle": "<string>",
+        "label": "<string>",
+        "name": "<string>",
+        "params": {
+          "labore_1": {},
+          "laborisd": {},
+          "laboris_a4": {}
+        },
+        "rowMetaData": [
+          {
+            "cssClass": "<string>",
+            "styles": {
+              "backgroundColor": {
+                "a": "<number>",
+                "b": "<integer>",
+                "g": "<integer>",
+                "r": "<integer>"
+              },
+              "backgroundGradient": {
+                "angle": {
+                  "units": "<string>",
+                  "value": "<number>"
+                },
+                "colors": [
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  },
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  }
+                ],
+                "sideOrCorner": {
+                  "horizontalSide": "<string>",
+                  "verticalSide": "<string>"
+                }
+              },
+              "backgroundImage": {
+                "backgroundPosition": "<string>",
+                "backgroundSize": "<string>",
+                "imageUrl": "<string>"
+              },
+              "flexboxPositioning": "<string>",
+              "forceFullWidthSection": "<boolean>",
+              "maxWidthSectionCentering": "<integer>",
+              "verticalAlignment": "<string>"
+            }
+          },
+          {
+            "cssClass": "<string>",
+            "styles": {
+              "backgroundColor": {
+                "a": "<number>",
+                "b": "<integer>",
+                "g": "<integer>",
+                "r": "<integer>"
+              },
+              "backgroundGradient": {
+                "angle": {
+                  "units": "<string>",
+                  "value": "<number>"
+                },
+                "colors": [
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  },
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  }
+                ],
+                "sideOrCorner": {
+                  "horizontalSide": "<string>",
+                  "verticalSide": "<string>"
+                }
+              },
+              "backgroundImage": {
+                "backgroundPosition": "<string>",
+                "backgroundSize": "<string>",
+                "imageUrl": "<string>"
+              },
+              "flexboxPositioning": "<string>",
+              "forceFullWidthSection": "<boolean>",
+              "maxWidthSectionCentering": "<integer>",
+              "verticalAlignment": "<string>"
+            }
+          }
+        ],
+        "rows": [
+          {
+            "Utc": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            }
+          },
+          {
+            "aute_0": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            },
+            "fugiat8c_": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            },
+            "fugiat_fd": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            }
+          }
+        ],
+        "styles": {
+          "backgroundColor": {
+            "a": "<number>",
+            "b": "<integer>",
+            "g": "<integer>",
+            "r": "<integer>"
+          },
+          "backgroundGradient": {
+            "angle": {
+              "units": "<string>",
+              "value": "<number>"
+            },
+            "colors": [
+              {
+                "color": {
+                  "a": "<number>",
+                  "b": "<integer>",
+                  "g": "<integer>",
+                  "r": "<integer>"
+                }
+              },
+              {
+                "color": {
+                  "a": "<number>",
+                  "b": "<integer>",
+                  "g": "<integer>",
+                  "r": "<integer>"
+                }
+              }
+            ],
+            "sideOrCorner": {
+              "horizontalSide": "<string>",
+              "verticalSide": "<string>"
+            }
+          },
+          "backgroundImage": {
+            "backgroundPosition": "<string>",
+            "backgroundSize": "<string>",
+            "imageUrl": "<string>"
+          },
+          "flexboxPositioning": "<string>",
+          "forceFullWidthSection": "<boolean>",
+          "maxWidthSectionCentering": "<integer>",
+          "verticalAlignment": "<string>"
+        },
+        "type": "<string>",
+        "w": "<integer>",
+        "x": "<integer>"
+      },
+      "eiusmod_3": {
+        "cells": [
+          {
+            "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+          },
+          {
+            "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+          }
+        ],
+        "cssClass": "<string>",
+        "cssId": "<string>",
+        "cssStyle": "<string>",
+        "label": "<string>",
+        "name": "<string>",
+        "params": {
+          "Lorem_b": {},
+          "aliquip_b": {},
+          "voluptate_9c": {},
+          "et_509": {}
+        },
+        "rowMetaData": [
+          {
+            "cssClass": "<string>",
+            "styles": {
+              "backgroundColor": {
+                "a": "<number>",
+                "b": "<integer>",
+                "g": "<integer>",
+                "r": "<integer>"
+              },
+              "backgroundGradient": {
+                "angle": {
+                  "units": "<string>",
+                  "value": "<number>"
+                },
+                "colors": [
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  },
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  }
+                ],
+                "sideOrCorner": {
+                  "horizontalSide": "<string>",
+                  "verticalSide": "<string>"
+                }
+              },
+              "backgroundImage": {
+                "backgroundPosition": "<string>",
+                "backgroundSize": "<string>",
+                "imageUrl": "<string>"
+              },
+              "flexboxPositioning": "<string>",
+              "forceFullWidthSection": "<boolean>",
+              "maxWidthSectionCentering": "<integer>",
+              "verticalAlignment": "<string>"
+            }
+          },
+          {
+            "cssClass": "<string>",
+            "styles": {
+              "backgroundColor": {
+                "a": "<number>",
+                "b": "<integer>",
+                "g": "<integer>",
+                "r": "<integer>"
+              },
+              "backgroundGradient": {
+                "angle": {
+                  "units": "<string>",
+                  "value": "<number>"
+                },
+                "colors": [
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  },
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  }
+                ],
+                "sideOrCorner": {
+                  "horizontalSide": "<string>",
+                  "verticalSide": "<string>"
+                }
+              },
+              "backgroundImage": {
+                "backgroundPosition": "<string>",
+                "backgroundSize": "<string>",
+                "imageUrl": "<string>"
+              },
+              "flexboxPositioning": "<string>",
+              "forceFullWidthSection": "<boolean>",
+              "maxWidthSectionCentering": "<integer>",
+              "verticalAlignment": "<string>"
+            }
+          }
+        ],
+        "rows": [
+          {
+            "proident_56": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            }
+          },
+          {
+            "sit_9": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            },
+            "amet_30c": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            }
+          }
+        ],
+        "styles": {
+          "backgroundColor": {
+            "a": "<number>",
+            "b": "<integer>",
+            "g": "<integer>",
+            "r": "<integer>"
+          },
+          "backgroundGradient": {
+            "angle": {
+              "units": "<string>",
+              "value": "<number>"
+            },
+            "colors": [
+              {
+                "color": {
+                  "a": "<number>",
+                  "b": "<integer>",
+                  "g": "<integer>",
+                  "r": "<integer>"
+                }
+              },
+              {
+                "color": {
+                  "a": "<number>",
+                  "b": "<integer>",
+                  "g": "<integer>",
+                  "r": "<integer>"
+                }
+              }
+            ],
+            "sideOrCorner": {
+              "horizontalSide": "<string>",
+              "verticalSide": "<string>"
+            }
+          },
+          "backgroundImage": {
+            "backgroundPosition": "<string>",
+            "backgroundSize": "<string>",
+            "imageUrl": "<string>"
+          },
+          "flexboxPositioning": "<string>",
+          "forceFullWidthSection": "<boolean>",
+          "maxWidthSectionCentering": "<integer>",
+          "verticalAlignment": "<string>"
+        },
+        "type": "<string>",
+        "w": "<integer>",
+        "x": "<integer>"
+      },
+      "in1d1": {
+        "cells": [
+          {
+            "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+          },
+          {
+            "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+          }
+        ],
+        "cssClass": "<string>",
+        "cssId": "<string>",
+        "cssStyle": "<string>",
+        "label": "<string>",
+        "name": "<string>",
+        "params": {
+          "voluptate_433": {},
+          "exercitation_d": {}
+        },
+        "rowMetaData": [
+          {
+            "cssClass": "<string>",
+            "styles": {
+              "backgroundColor": {
+                "a": "<number>",
+                "b": "<integer>",
+                "g": "<integer>",
+                "r": "<integer>"
+              },
+              "backgroundGradient": {
+                "angle": {
+                  "units": "<string>",
+                  "value": "<number>"
+                },
+                "colors": [
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  },
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  }
+                ],
+                "sideOrCorner": {
+                  "horizontalSide": "<string>",
+                  "verticalSide": "<string>"
+                }
+              },
+              "backgroundImage": {
+                "backgroundPosition": "<string>",
+                "backgroundSize": "<string>",
+                "imageUrl": "<string>"
+              },
+              "flexboxPositioning": "<string>",
+              "forceFullWidthSection": "<boolean>",
+              "maxWidthSectionCentering": "<integer>",
+              "verticalAlignment": "<string>"
+            }
+          },
+          {
+            "cssClass": "<string>",
+            "styles": {
+              "backgroundColor": {
+                "a": "<number>",
+                "b": "<integer>",
+                "g": "<integer>",
+                "r": "<integer>"
+              },
+              "backgroundGradient": {
+                "angle": {
+                  "units": "<string>",
+                  "value": "<number>"
+                },
+                "colors": [
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  },
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  }
+                ],
+                "sideOrCorner": {
+                  "horizontalSide": "<string>",
+                  "verticalSide": "<string>"
+                }
+              },
+              "backgroundImage": {
+                "backgroundPosition": "<string>",
+                "backgroundSize": "<string>",
+                "imageUrl": "<string>"
+              },
+              "flexboxPositioning": "<string>",
+              "forceFullWidthSection": "<boolean>",
+              "maxWidthSectionCentering": "<integer>",
+              "verticalAlignment": "<string>"
+            }
+          }
+        ],
+        "rows": [
+          {
+            "ullamco6eb": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            },
+            "eu_": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            }
+          },
+          {
+            "incididunt_44b": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            },
+            "ex_3c6": {
+              "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+            }
+          }
+        ],
+        "styles": {
+          "backgroundColor": {
+            "a": "<number>",
+            "b": "<integer>",
+            "g": "<integer>",
+            "r": "<integer>"
+          },
+          "backgroundGradient": {
+            "angle": {
+              "units": "<string>",
+              "value": "<number>"
+            },
+            "colors": [
+              {
+                "color": {
+                  "a": "<number>",
+                  "b": "<integer>",
+                  "g": "<integer>",
+                  "r": "<integer>"
+                }
+              },
+              {
+                "color": {
+                  "a": "<number>",
+                  "b": "<integer>",
+                  "g": "<integer>",
+                  "r": "<integer>"
+                }
+              }
+            ],
+            "sideOrCorner": {
+              "horizontalSide": "<string>",
+              "verticalSide": "<string>"
+            }
+          },
+          "backgroundImage": {
+            "backgroundPosition": "<string>",
+            "backgroundSize": "<string>",
+            "imageUrl": "<string>"
+          },
+          "flexboxPositioning": "<string>",
+          "forceFullWidthSection": "<boolean>",
+          "maxWidthSectionCentering": "<integer>",
+          "verticalAlignment": "<string>"
+        },
+        "type": "<string>",
+        "w": "<integer>",
+        "x": "<integer>"
+      }
+    },
+    "linkRelCanonicalUrl": "<string>",
+    "mabExperimentId": "<string>",
+    "metaDescription": "<string>",
+    "name": "<string>",
+    "pageExpiryDate": "<long>",
+    "pageExpiryEnabled": "<boolean>",
+    "pageExpiryRedirectId": "<long>",
+    "pageExpiryRedirectUrl": "<string>",
+    "password": "<string>",
+    "postBody": "<string>",
+    "postSummary": "<string>",
+    "publicAccessRules": [],
+    "publicAccessRulesEnabled": "<boolean>",
+    "publishDate": "<dateTime>",
+    "publishImmediately": "<boolean>",
+    "rssBody": "<string>",
+    "rssSummary": "<string>",
+    "slug": "<string>",
+    "state": "<string>",
+    "tagIds": [
+      "<long>",
+      "<long>"
+    ],
+    "themeSettingsValues": {
+      "mollit_7": {}
+    },
+    "translatedFromId": "<string>",
+    "translations": {
+      "velita21": {
+        "archivedInDashboard": "<boolean>",
+        "authorName": "<string>",
+        "campaign": "<string>",
+        "created": "<dateTime>",
+        "id": "<long>",
+        "name": "<string>",
+        "password": "<string>",
+        "publicAccessRules": [],
+        "publicAccessRulesEnabled": "<boolean>",
+        "publishDate": "<dateTime>",
+        "slug": "<string>",
+        "state": "<string>",
+        "updated": "<dateTime>",
+        "tagIds": [
+          "<long>",
+          "<long>"
+        ]
+      },
+      "quis15": {
+        "archivedInDashboard": "<boolean>",
+        "authorName": "<string>",
+        "campaign": "<string>",
+        "created": "<dateTime>",
+        "id": "<long>",
+        "name": "<string>",
+        "password": "<string>",
+        "publicAccessRules": [],
+        "publicAccessRulesEnabled": "<boolean>",
+        "publishDate": "<dateTime>",
+        "slug": "<string>",
+        "state": "<string>",
+        "updated": "<dateTime>",
+        "tagIds": [
+          "<long>",
+          "<long>"
+        ]
+      },
+      "ad_3_": {
+        "archivedInDashboard": "<boolean>",
+        "authorName": "<string>",
+        "campaign": "<string>",
+        "created": "<dateTime>",
+        "id": "<long>",
+        "name": "<string>",
+        "password": "<string>",
+        "publicAccessRules": [],
+        "publicAccessRulesEnabled": "<boolean>",
+        "publishDate": "<dateTime>",
+        "slug": "<string>",
+        "state": "<string>",
+        "updated": "<dateTime>",
+        "tagIds": [
+          "<long>",
+          "<long>"
+        ]
+      },
+      "commodo__b3": {
+        "archivedInDashboard": "<boolean>",
+        "authorName": "<string>",
+        "campaign": "<string>",
+        "created": "<dateTime>",
+        "id": "<long>",
+        "name": "<string>",
+        "password": "<string>",
+        "publicAccessRules": [],
+        "publicAccessRulesEnabled": "<boolean>",
+        "publishDate": "<dateTime>",
+        "slug": "<string>",
+        "state": "<string>",
+        "updated": "<dateTime>",
+        "tagIds": [
+          "<long>",
+          "<long>"
+        ]
+      },
+      "dolor_": {
+        "archivedInDashboard": "<boolean>",
+        "authorName": "<string>",
+        "campaign": "<string>",
+        "created": "<dateTime>",
+        "id": "<long>",
+        "name": "<string>",
+        "password": "<string>",
+        "publicAccessRules": [],
+        "publicAccessRulesEnabled": "<boolean>",
+        "publishDate": "<dateTime>",
+        "slug": "<string>",
+        "state": "<string>",
+        "updated": "<dateTime>",
+        "tagIds": [
+          "<long>",
+          "<long>"
+        ]
+      }
+    },
+    "updated": "<dateTime>",
+    "updatedById": "<string>",
+    "url": "<string>",
+    "useFeaturedImage": "<boolean>",
+    "widgetContainers": {
+      "id654": {},
+      "labore9d": {}
+    },
+    "widgets": {
+      "enimc01": {},
+      "dolore_77c": {}
+    }
+  }
+}

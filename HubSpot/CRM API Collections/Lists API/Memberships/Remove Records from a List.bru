@@ -1,0 +1,23 @@
+meta {
+  name: Remove Records from a List
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/crm/v3/lists/:listId/memberships/remove
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  [
+    "<long>",
+    "<long>"
+  ]
+}

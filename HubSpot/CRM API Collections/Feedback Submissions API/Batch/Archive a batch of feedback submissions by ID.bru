@@ -1,0 +1,29 @@
+meta {
+  name: Archive a batch of feedback submissions by ID
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/feedback_submissions/batch/archive
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>"
+      },
+      {
+        "id": "<string>"
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+meta {
+  name: Update a batch of companies
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/companies/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "elit3b": "<string>",
+          "idd7": "<string>",
+          "sed3b": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "velit_f": "<string>",
+          "dolore_3c": "<string>"
+        }
+      }
+    ]
+  }
+}

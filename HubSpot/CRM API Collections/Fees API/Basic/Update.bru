@@ -1,0 +1,29 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/crm/v3/objects/fees/:feeId?idProperty=<string>
+  body: json
+  auth: none
+}
+
+query {
+  idProperty: <string>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "properties": {
+      "exercitation2": "<string>",
+      "officiaa9": "<string>"
+    }
+  }
+}

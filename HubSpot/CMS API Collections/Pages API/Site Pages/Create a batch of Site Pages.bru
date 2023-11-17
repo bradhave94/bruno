@@ -1,0 +1,810 @@
+meta {
+  name: Create a batch of Site Pages
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/batch/create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "abStatus": "mab_master",
+        "abTestId": "<string>",
+        "archivedAt": "<dateTime>",
+        "archivedInDashboard": "<boolean>",
+        "attachedStylesheets": [
+          {
+            "mollit03b": {},
+            "laboris_d31": {},
+            "cupidatat9a8": {}
+          },
+          {
+            "non53e": {}
+          }
+        ],
+        "authorName": "<string>",
+        "campaign": "<string>",
+        "categoryId": "<integer>",
+        "contentGroupId": "<string>",
+        "contentTypeCategory": "6",
+        "created": "<dateTime>",
+        "createdById": "<string>",
+        "currentState": "SCHEDULED_OR_PUBLISHED",
+        "currentlyPublished": "<boolean>",
+        "domain": "<string>",
+        "dynamicPageDataSourceId": "<string>",
+        "dynamicPageDataSourceType": "<integer>",
+        "dynamicPageHubDbTableId": "<string>",
+        "enableDomainStylesheets": "<boolean>",
+        "enableLayoutStylesheets": "<boolean>",
+        "featuredImage": "<string>",
+        "featuredImageAltText": "<string>",
+        "folderId": "<string>",
+        "footerHtml": "<string>",
+        "headHtml": "<string>",
+        "htmlTitle": "<string>",
+        "id": "<string>",
+        "includeDefaultCustomCss": "<boolean>",
+        "language": "dua-cm",
+        "layoutSections": {
+          "fugiat31": {
+            "cells": [
+              {
+                "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+              },
+              {
+                "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+              }
+            ],
+            "cssClass": "<string>",
+            "cssId": "<string>",
+            "cssStyle": "<string>",
+            "label": "<string>",
+            "name": "<string>",
+            "params": {
+              "nostrud7c": {},
+              "quis_d": {},
+              "ut13": {}
+            },
+            "rowMetaData": [
+              {
+                "cssClass": "<string>",
+                "styles": {
+                  "backgroundColor": {
+                    "a": "<number>",
+                    "b": "<integer>",
+                    "g": "<integer>",
+                    "r": "<integer>"
+                  },
+                  "backgroundGradient": {
+                    "angle": {
+                      "units": "<string>",
+                      "value": "<number>"
+                    },
+                    "colors": [
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      },
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      }
+                    ],
+                    "sideOrCorner": {
+                      "horizontalSide": "<string>",
+                      "verticalSide": "<string>"
+                    }
+                  },
+                  "backgroundImage": {
+                    "backgroundPosition": "<string>",
+                    "backgroundSize": "<string>",
+                    "imageUrl": "<string>"
+                  },
+                  "flexboxPositioning": "<string>",
+                  "forceFullWidthSection": "<boolean>",
+                  "maxWidthSectionCentering": "<integer>",
+                  "verticalAlignment": "<string>"
+                }
+              },
+              {
+                "cssClass": "<string>",
+                "styles": {
+                  "backgroundColor": {
+                    "a": "<number>",
+                    "b": "<integer>",
+                    "g": "<integer>",
+                    "r": "<integer>"
+                  },
+                  "backgroundGradient": {
+                    "angle": {
+                      "units": "<string>",
+                      "value": "<number>"
+                    },
+                    "colors": [
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      },
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      }
+                    ],
+                    "sideOrCorner": {
+                      "horizontalSide": "<string>",
+                      "verticalSide": "<string>"
+                    }
+                  },
+                  "backgroundImage": {
+                    "backgroundPosition": "<string>",
+                    "backgroundSize": "<string>",
+                    "imageUrl": "<string>"
+                  },
+                  "flexboxPositioning": "<string>",
+                  "forceFullWidthSection": "<boolean>",
+                  "maxWidthSectionCentering": "<integer>",
+                  "verticalAlignment": "<string>"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "commodo_19": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                }
+              },
+              {
+                "eiusmod84": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                }
+              }
+            ],
+            "styles": {
+              "backgroundColor": {
+                "a": "<number>",
+                "b": "<integer>",
+                "g": "<integer>",
+                "r": "<integer>"
+              },
+              "backgroundGradient": {
+                "angle": {
+                  "units": "<string>",
+                  "value": "<number>"
+                },
+                "colors": [
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  },
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  }
+                ],
+                "sideOrCorner": {
+                  "horizontalSide": "<string>",
+                  "verticalSide": "<string>"
+                }
+              },
+              "backgroundImage": {
+                "backgroundPosition": "<string>",
+                "backgroundSize": "<string>",
+                "imageUrl": "<string>"
+              },
+              "flexboxPositioning": "<string>",
+              "forceFullWidthSection": "<boolean>",
+              "maxWidthSectionCentering": "<integer>",
+              "verticalAlignment": "<string>"
+            },
+            "type": "<string>",
+            "w": "<integer>",
+            "x": "<integer>"
+          },
+          "consequat2": {
+            "cells": [
+              {
+                "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+              },
+              {
+                "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+              }
+            ],
+            "cssClass": "<string>",
+            "cssId": "<string>",
+            "cssStyle": "<string>",
+            "label": "<string>",
+            "name": "<string>",
+            "params": {
+              "sit_cd": {},
+              "consequat11e": {}
+            },
+            "rowMetaData": [
+              {
+                "cssClass": "<string>",
+                "styles": {
+                  "backgroundColor": {
+                    "a": "<number>",
+                    "b": "<integer>",
+                    "g": "<integer>",
+                    "r": "<integer>"
+                  },
+                  "backgroundGradient": {
+                    "angle": {
+                      "units": "<string>",
+                      "value": "<number>"
+                    },
+                    "colors": [
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      },
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      }
+                    ],
+                    "sideOrCorner": {
+                      "horizontalSide": "<string>",
+                      "verticalSide": "<string>"
+                    }
+                  },
+                  "backgroundImage": {
+                    "backgroundPosition": "<string>",
+                    "backgroundSize": "<string>",
+                    "imageUrl": "<string>"
+                  },
+                  "flexboxPositioning": "<string>",
+                  "forceFullWidthSection": "<boolean>",
+                  "maxWidthSectionCentering": "<integer>",
+                  "verticalAlignment": "<string>"
+                }
+              },
+              {
+                "cssClass": "<string>",
+                "styles": {
+                  "backgroundColor": {
+                    "a": "<number>",
+                    "b": "<integer>",
+                    "g": "<integer>",
+                    "r": "<integer>"
+                  },
+                  "backgroundGradient": {
+                    "angle": {
+                      "units": "<string>",
+                      "value": "<number>"
+                    },
+                    "colors": [
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      },
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      }
+                    ],
+                    "sideOrCorner": {
+                      "horizontalSide": "<string>",
+                      "verticalSide": "<string>"
+                    }
+                  },
+                  "backgroundImage": {
+                    "backgroundPosition": "<string>",
+                    "backgroundSize": "<string>",
+                    "imageUrl": "<string>"
+                  },
+                  "flexboxPositioning": "<string>",
+                  "forceFullWidthSection": "<boolean>",
+                  "maxWidthSectionCentering": "<integer>",
+                  "verticalAlignment": "<string>"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "enim_3": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                },
+                "ea6": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                },
+                "sit25a": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                },
+                "voluptate3a": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                }
+              },
+              {
+                "cilluma": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                }
+              }
+            ],
+            "styles": {
+              "backgroundColor": {
+                "a": "<number>",
+                "b": "<integer>",
+                "g": "<integer>",
+                "r": "<integer>"
+              },
+              "backgroundGradient": {
+                "angle": {
+                  "units": "<string>",
+                  "value": "<number>"
+                },
+                "colors": [
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  },
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  }
+                ],
+                "sideOrCorner": {
+                  "horizontalSide": "<string>",
+                  "verticalSide": "<string>"
+                }
+              },
+              "backgroundImage": {
+                "backgroundPosition": "<string>",
+                "backgroundSize": "<string>",
+                "imageUrl": "<string>"
+              },
+              "flexboxPositioning": "<string>",
+              "forceFullWidthSection": "<boolean>",
+              "maxWidthSectionCentering": "<integer>",
+              "verticalAlignment": "<string>"
+            },
+            "type": "<string>",
+            "w": "<integer>",
+            "x": "<integer>"
+          }
+        },
+        "linkRelCanonicalUrl": "<string>",
+        "mabExperimentId": "<string>",
+        "metaDescription": "<string>",
+        "name": "<string>",
+        "pageExpiryDate": "<long>",
+        "pageExpiryEnabled": "<boolean>",
+        "pageExpiryRedirectId": "<long>",
+        "pageExpiryRedirectUrl": "<string>",
+        "pageRedirected": "<boolean>",
+        "password": "<string>",
+        "publicAccessRulesEnabled": "<boolean>",
+        "publishDate": "<dateTime>",
+        "publishImmediately": "<boolean>",
+        "slug": "<string>",
+        "state": "<string>",
+        "subcategory": "<string>",
+        "templatePath": "<string>",
+        "themeSettingsValues": {
+          "exercitationd66": {},
+          "elit572": {},
+          "eu_84f": {}
+        },
+        "translatedFromId": "<string>",
+        "translations": {
+          "idc30": {
+            "archivedInDashboard": "<boolean>",
+            "authorName": "<string>",
+            "campaign": "<string>",
+            "created": "<dateTime>",
+            "id": "<long>",
+            "name": "<string>",
+            "password": "<string>",
+            "publicAccessRules": [],
+            "publicAccessRulesEnabled": "<boolean>",
+            "publishDate": "<dateTime>",
+            "slug": "<string>",
+            "state": "<string>",
+            "updated": "<dateTime>",
+            "tagIds": [
+              "<long>",
+              "<long>"
+            ]
+          },
+          "enim_5": {
+            "archivedInDashboard": "<boolean>",
+            "authorName": "<string>",
+            "campaign": "<string>",
+            "created": "<dateTime>",
+            "id": "<long>",
+            "name": "<string>",
+            "password": "<string>",
+            "publicAccessRules": [],
+            "publicAccessRulesEnabled": "<boolean>",
+            "publishDate": "<dateTime>",
+            "slug": "<string>",
+            "state": "<string>",
+            "updated": "<dateTime>",
+            "tagIds": [
+              "<long>",
+              "<long>"
+            ]
+          }
+        },
+        "updated": "<dateTime>",
+        "updatedById": "<string>",
+        "url": "<string>",
+        "useFeaturedImage": "<boolean>",
+        "widgetContainers": {
+          "deserunta": {}
+        },
+        "widgets": {
+          "ut_c1": {}
+        }
+      },
+      {
+        "abStatus": "variant",
+        "abTestId": "<string>",
+        "archivedAt": "<dateTime>",
+        "archivedInDashboard": "<boolean>",
+        "attachedStylesheets": [
+          {
+            "utd8c": {},
+            "Lorem_ae8": {}
+          },
+          {
+            "anim_7": {},
+            "sit_5": {}
+          }
+        ],
+        "authorName": "<string>",
+        "campaign": "<string>",
+        "categoryId": "<integer>",
+        "contentGroupId": "<string>",
+        "contentTypeCategory": "5",
+        "created": "<dateTime>",
+        "createdById": "<string>",
+        "currentState": "ERROR",
+        "currentlyPublished": "<boolean>",
+        "domain": "<string>",
+        "dynamicPageDataSourceId": "<string>",
+        "dynamicPageDataSourceType": "<integer>",
+        "dynamicPageHubDbTableId": "<string>",
+        "enableDomainStylesheets": "<boolean>",
+        "enableLayoutStylesheets": "<boolean>",
+        "featuredImage": "<string>",
+        "featuredImageAltText": "<string>",
+        "folderId": "<string>",
+        "footerHtml": "<string>",
+        "headHtml": "<string>",
+        "htmlTitle": "<string>",
+        "id": "<string>",
+        "includeDefaultCustomCss": "<boolean>",
+        "language": "ar-sa",
+        "layoutSections": {
+          "aute_bd": {
+            "cells": [
+              {
+                "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+              },
+              {
+                "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+              }
+            ],
+            "cssClass": "<string>",
+            "cssId": "<string>",
+            "cssStyle": "<string>",
+            "label": "<string>",
+            "name": "<string>",
+            "params": {
+              "qui_646": {},
+              "inf": {}
+            },
+            "rowMetaData": [
+              {
+                "cssClass": "<string>",
+                "styles": {
+                  "backgroundColor": {
+                    "a": "<number>",
+                    "b": "<integer>",
+                    "g": "<integer>",
+                    "r": "<integer>"
+                  },
+                  "backgroundGradient": {
+                    "angle": {
+                      "units": "<string>",
+                      "value": "<number>"
+                    },
+                    "colors": [
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      },
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      }
+                    ],
+                    "sideOrCorner": {
+                      "horizontalSide": "<string>",
+                      "verticalSide": "<string>"
+                    }
+                  },
+                  "backgroundImage": {
+                    "backgroundPosition": "<string>",
+                    "backgroundSize": "<string>",
+                    "imageUrl": "<string>"
+                  },
+                  "flexboxPositioning": "<string>",
+                  "forceFullWidthSection": "<boolean>",
+                  "maxWidthSectionCentering": "<integer>",
+                  "verticalAlignment": "<string>"
+                }
+              },
+              {
+                "cssClass": "<string>",
+                "styles": {
+                  "backgroundColor": {
+                    "a": "<number>",
+                    "b": "<integer>",
+                    "g": "<integer>",
+                    "r": "<integer>"
+                  },
+                  "backgroundGradient": {
+                    "angle": {
+                      "units": "<string>",
+                      "value": "<number>"
+                    },
+                    "colors": [
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      },
+                      {
+                        "color": {
+                          "a": "<number>",
+                          "b": "<integer>",
+                          "g": "<integer>",
+                          "r": "<integer>"
+                        }
+                      }
+                    ],
+                    "sideOrCorner": {
+                      "horizontalSide": "<string>",
+                      "verticalSide": "<string>"
+                    }
+                  },
+                  "backgroundImage": {
+                    "backgroundPosition": "<string>",
+                    "backgroundSize": "<string>",
+                    "imageUrl": "<string>"
+                  },
+                  "flexboxPositioning": "<string>",
+                  "forceFullWidthSection": "<boolean>",
+                  "maxWidthSectionCentering": "<integer>",
+                  "verticalAlignment": "<string>"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "enim__": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                },
+                "irure_42b": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                }
+              },
+              {
+                "sedc94": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                },
+                "cillum42": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                },
+                "anim9ff": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                },
+                "eaae": {
+                  "value": "<Circular reference to #/components/schemas/LayoutSection detected>"
+                }
+              }
+            ],
+            "styles": {
+              "backgroundColor": {
+                "a": "<number>",
+                "b": "<integer>",
+                "g": "<integer>",
+                "r": "<integer>"
+              },
+              "backgroundGradient": {
+                "angle": {
+                  "units": "<string>",
+                  "value": "<number>"
+                },
+                "colors": [
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  },
+                  {
+                    "color": {
+                      "a": "<number>",
+                      "b": "<integer>",
+                      "g": "<integer>",
+                      "r": "<integer>"
+                    }
+                  }
+                ],
+                "sideOrCorner": {
+                  "horizontalSide": "<string>",
+                  "verticalSide": "<string>"
+                }
+              },
+              "backgroundImage": {
+                "backgroundPosition": "<string>",
+                "backgroundSize": "<string>",
+                "imageUrl": "<string>"
+              },
+              "flexboxPositioning": "<string>",
+              "forceFullWidthSection": "<boolean>",
+              "maxWidthSectionCentering": "<integer>",
+              "verticalAlignment": "<string>"
+            },
+            "type": "<string>",
+            "w": "<integer>",
+            "x": "<integer>"
+          }
+        },
+        "linkRelCanonicalUrl": "<string>",
+        "mabExperimentId": "<string>",
+        "metaDescription": "<string>",
+        "name": "<string>",
+        "pageExpiryDate": "<long>",
+        "pageExpiryEnabled": "<boolean>",
+        "pageExpiryRedirectId": "<long>",
+        "pageExpiryRedirectUrl": "<string>",
+        "pageRedirected": "<boolean>",
+        "password": "<string>",
+        "publicAccessRulesEnabled": "<boolean>",
+        "publishDate": "<dateTime>",
+        "publishImmediately": "<boolean>",
+        "slug": "<string>",
+        "state": "<string>",
+        "subcategory": "<string>",
+        "templatePath": "<string>",
+        "themeSettingsValues": {
+          "dolore0": {},
+          "aliqua8d7": {},
+          "sit_fc7": {}
+        },
+        "translatedFromId": "<string>",
+        "translations": {
+          "ipsum71": {
+            "archivedInDashboard": "<boolean>",
+            "authorName": "<string>",
+            "campaign": "<string>",
+            "created": "<dateTime>",
+            "id": "<long>",
+            "name": "<string>",
+            "password": "<string>",
+            "publicAccessRules": [],
+            "publicAccessRulesEnabled": "<boolean>",
+            "publishDate": "<dateTime>",
+            "slug": "<string>",
+            "state": "<string>",
+            "updated": "<dateTime>",
+            "tagIds": [
+              "<long>",
+              "<long>"
+            ]
+          },
+          "aute421": {
+            "archivedInDashboard": "<boolean>",
+            "authorName": "<string>",
+            "campaign": "<string>",
+            "created": "<dateTime>",
+            "id": "<long>",
+            "name": "<string>",
+            "password": "<string>",
+            "publicAccessRules": [],
+            "publicAccessRulesEnabled": "<boolean>",
+            "publishDate": "<dateTime>",
+            "slug": "<string>",
+            "state": "<string>",
+            "updated": "<dateTime>",
+            "tagIds": [
+              "<long>",
+              "<long>"
+            ]
+          }
+        },
+        "updated": "<dateTime>",
+        "updatedById": "<string>",
+        "url": "<string>",
+        "useFeaturedImage": "<boolean>",
+        "widgetContainers": {
+          "minim3": {},
+          "sitd": {},
+          "sint_": {},
+          "est_0": {}
+        },
+        "widgets": {
+          "anim_14": {},
+          "incididuntf": {}
+        }
+      }
+    ]
+  }
+}

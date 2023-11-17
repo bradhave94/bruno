@@ -1,0 +1,21 @@
+meta {
+  name: Import data into draft table
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/draft/import
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Content-Type: multipart/form-data
+  Accept: application/json
+}
+
+body:form-urlencoded {
+  config: %3Cstring%3E
+  file: %3Cstring%3E
+}

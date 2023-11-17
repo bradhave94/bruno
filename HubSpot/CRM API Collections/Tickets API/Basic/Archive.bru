@@ -1,0 +1,15 @@
+meta {
+  name: Archive
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/crm/v3/objects/tickets/:ticketId
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: */*
+}

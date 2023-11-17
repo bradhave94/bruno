@@ -1,0 +1,22 @@
+meta {
+  name: Get a page of owners
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/owners/?email=<string>&after=<string>&limit=100&archived=false
+  body: none
+  auth: none
+}
+
+query {
+  email: <string>
+  after: <string>
+  limit: 100
+  archived: false
+}
+
+headers {
+  Accept: application/json
+}

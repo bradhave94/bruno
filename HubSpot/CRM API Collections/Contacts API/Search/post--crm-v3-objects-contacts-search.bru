@@ -1,0 +1,82 @@
+meta {
+  name: post--crm-v3-objects-contacts-search
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/contacts/search
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "after": "<integer>",
+    "filterGroups": [
+      {
+        "filters": [
+          {
+            "operator": "NEQ",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          },
+          {
+            "operator": "GT",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          }
+        ]
+      },
+      {
+        "filters": [
+          {
+            "operator": "NEQ",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          },
+          {
+            "operator": "HAS_PROPERTY",
+            "propertyName": "<string>",
+            "value": "<string>",
+            "highValue": "<string>",
+            "values": [
+              "<string>",
+              "<string>"
+            ]
+          }
+        ]
+      }
+    ],
+    "limit": "<integer>",
+    "properties": [
+      "<string>",
+      "<string>"
+    ],
+    "sorts": [
+      "<string>",
+      "<string>"
+    ],
+    "query": "<string>"
+  }
+}

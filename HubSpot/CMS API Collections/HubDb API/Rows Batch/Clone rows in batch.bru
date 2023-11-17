@@ -1,0 +1,25 @@
+meta {
+  name: Clone rows in batch
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/rows/draft/batch/clone
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      "<string>",
+      "<string>"
+    ]
+  }
+}

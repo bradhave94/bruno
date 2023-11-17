@@ -1,0 +1,41 @@
+meta {
+  name: Create a batch of Blog Tags
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/blogs/tags/batch/create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "created": "<dateTime>",
+        "deletedAt": "<dateTime>",
+        "id": "<string>",
+        "language": "ff-sl",
+        "name": "<string>",
+        "translatedFromId": "<long>",
+        "updated": "<dateTime>"
+      },
+      {
+        "created": "<dateTime>",
+        "deletedAt": "<dateTime>",
+        "id": "<string>",
+        "language": "am",
+        "name": "<string>",
+        "translatedFromId": "<long>",
+        "updated": "<dateTime>"
+      }
+    ]
+  }
+}

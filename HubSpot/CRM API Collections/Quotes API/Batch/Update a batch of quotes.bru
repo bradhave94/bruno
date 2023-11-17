@@ -1,0 +1,36 @@
+meta {
+  name: Update a batch of quotes
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/quotes/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "aliquip4_": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "sed8": "<string>",
+          "dolore1a": "<string>"
+        }
+      }
+    ]
+  }
+}

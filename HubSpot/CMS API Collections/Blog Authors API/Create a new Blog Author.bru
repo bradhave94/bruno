@@ -1,0 +1,38 @@
+meta {
+  name: Create a new Blog Author
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/blogs/authors
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "avatar": "<string>",
+    "bio": "<string>",
+    "created": "<dateTime>",
+    "deletedAt": "<dateTime>",
+    "displayName": "<string>",
+    "email": "<string>",
+    "facebook": "<string>",
+    "fullName": "<string>",
+    "id": "<string>",
+    "language": "ksf",
+    "linkedin": "<string>",
+    "name": "<string>",
+    "slug": "<string>",
+    "translatedFromId": "<long>",
+    "twitter": "<string>",
+    "updated": "<dateTime>",
+    "website": "<string>"
+  }
+}

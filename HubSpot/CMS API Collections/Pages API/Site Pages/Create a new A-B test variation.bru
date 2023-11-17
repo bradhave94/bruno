@@ -1,0 +1,23 @@
+meta {
+  name: Create a new A-B test variation
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/ab-test/create-variation
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "contentId": "<string>",
+    "variationName": "<string>"
+  }
+}

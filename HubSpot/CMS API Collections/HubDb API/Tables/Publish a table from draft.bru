@@ -1,0 +1,19 @@
+meta {
+  name: Publish a table from draft
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/draft/publish?includeForeignIds=<boolean>
+  body: none
+  auth: none
+}
+
+query {
+  includeForeignIds: <boolean>
+}
+
+headers {
+  Accept: application/json
+}

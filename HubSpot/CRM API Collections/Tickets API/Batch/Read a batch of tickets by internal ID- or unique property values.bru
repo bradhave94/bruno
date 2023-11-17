@@ -1,0 +1,42 @@
+meta {
+  name: Read a batch of tickets by internal ID- or unique property values
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/tickets/batch/read?archived=false
+  body: json
+  auth: none
+}
+
+query {
+  archived: false
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>"
+      },
+      {
+        "id": "<string>"
+      }
+    ],
+    "properties": [
+      "<string>",
+      "<string>"
+    ],
+    "propertiesWithHistory": [
+      "<string>",
+      "<string>"
+    ],
+    "idProperty": "<string>"
+  }
+}

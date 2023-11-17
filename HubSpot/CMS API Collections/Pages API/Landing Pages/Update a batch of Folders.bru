@@ -1,0 +1,26 @@
+meta {
+  name: Update a batch of Folders
+  type: http
+  seq: 30
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/folders/batch/update?archived=<boolean>
+  body: json
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": []
+  }
+}

@@ -1,0 +1,23 @@
+meta {
+  name: GDPR DELETE
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/goal_targets/gdpr-delete
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "objectId": "<string>",
+    "idProperty": "<string>"
+  }
+}

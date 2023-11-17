@@ -1,0 +1,29 @@
+meta {
+  name: Retrieve a batch of Blog Posts
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/blogs/posts/batch/read?archived=<boolean>
+  body: json
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      "<string>",
+      "<string>"
+    ]
+  }
+}

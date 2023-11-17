@@ -1,0 +1,29 @@
+meta {
+  name: Get all Blogs
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/blog-settings/settings?createdAt=<dateTime>&createdAfter=<dateTime>&createdBefore=<dateTime>&updatedAt=<dateTime>&updatedAfter=<dateTime>&updatedBefore=<dateTime>&sort=<string>&sort=<string>&after=<string>&limit=<integer>&archived=<boolean>
+  body: none
+  auth: none
+}
+
+query {
+  createdAt: <dateTime>
+  createdAfter: <dateTime>
+  createdBefore: <dateTime>
+  updatedAt: <dateTime>
+  updatedAfter: <dateTime>
+  updatedBefore: <dateTime>
+  sort: <string>
+  sort: <string>
+  after: <string>
+  limit: <integer>
+  archived: <boolean>
+}
+
+headers {
+  Accept: application/json
+}

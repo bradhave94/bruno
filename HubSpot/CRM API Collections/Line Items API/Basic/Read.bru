@@ -1,0 +1,26 @@
+meta {
+  name: Read
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/objects/line_items/:lineItemId?properties=<string>&properties=<string>&propertiesWithHistory=<string>&propertiesWithHistory=<string>&associations=<string>&associations=<string>&archived=false&idProperty=<string>
+  body: none
+  auth: none
+}
+
+query {
+  properties: <string>
+  properties: <string>
+  propertiesWithHistory: <string>
+  propertiesWithHistory: <string>
+  associations: <string>
+  associations: <string>
+  archived: false
+  idProperty: <string>
+}
+
+headers {
+  Accept: application/json
+}

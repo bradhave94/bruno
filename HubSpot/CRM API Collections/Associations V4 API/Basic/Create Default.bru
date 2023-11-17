@@ -1,0 +1,15 @@
+meta {
+  name: Create Default
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/crm/v4/objects/:fromObjectType/:fromObjectId/associations/default/:toObjectType/:toObjectId
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

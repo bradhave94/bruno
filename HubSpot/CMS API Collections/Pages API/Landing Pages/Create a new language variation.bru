@@ -1,0 +1,24 @@
+meta {
+  name: Create a new language variation
+  type: http
+  seq: 36
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/multi-language/create-language-variation
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "id": "<string>",
+    "language": "<string>",
+    "primaryLanguage": "<string>"
+  }
+}

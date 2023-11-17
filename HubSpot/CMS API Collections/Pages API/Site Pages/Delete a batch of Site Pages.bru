@@ -1,0 +1,25 @@
+meta {
+  name: Delete a batch of Site Pages
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/batch/archive
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "inputs": [
+      "<string>",
+      "<string>"
+    ]
+  }
+}

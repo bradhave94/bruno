@@ -1,0 +1,20 @@
+meta {
+  name: Retrieve a Blog Tag
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/blogs/tags/:objectId?archived=<boolean>&property=<string>
+  body: none
+  auth: none
+}
+
+query {
+  archived: <boolean>
+  property: <string>
+}
+
+headers {
+  Accept: application/json
+}

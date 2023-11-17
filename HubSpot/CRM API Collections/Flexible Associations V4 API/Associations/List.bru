@@ -1,0 +1,20 @@
+meta {
+  name: List
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/crm/v4/objects/:objectType/:objectId/associations/:toObjectType?after=<string>&limit=500
+  body: none
+  auth: none
+}
+
+query {
+  after: <string>
+  limit: 500
+}
+
+headers {
+  Accept: application/json
+}

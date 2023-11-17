@@ -1,0 +1,29 @@
+meta {
+  name: Return all draft tables
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/draft?sort=<string>&sort=<string>&after=<string>&limit=<integer>&createdAt=<dateTime>&createdAfter=<dateTime>&createdBefore=<dateTime>&updatedAt=<dateTime>&updatedAfter=<dateTime>&updatedBefore=<dateTime>&archived=<boolean>
+  body: none
+  auth: none
+}
+
+query {
+  sort: <string>
+  sort: <string>
+  after: <string>
+  limit: <integer>
+  createdAt: <dateTime>
+  createdAfter: <dateTime>
+  createdBefore: <dateTime>
+  updatedAt: <dateTime>
+  updatedAfter: <dateTime>
+  updatedBefore: <dateTime>
+  archived: <boolean>
+}
+
+headers {
+  Accept: application/json
+}

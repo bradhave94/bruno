@@ -1,0 +1,29 @@
+meta {
+  name: Retrieve a batch of Site Pages
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/batch/read?archived=<boolean>
+  body: json
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      "<string>",
+      "<string>"
+    ]
+  }
+}

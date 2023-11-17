@@ -1,0 +1,38 @@
+meta {
+  name: Update a batch of fees
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/fees/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "occaecat50": "<string>",
+          "velita": "<string>",
+          "eiusmod93": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "idc": "<string>",
+          "exercitation7bc": "<string>"
+        }
+      }
+    ]
+  }
+}

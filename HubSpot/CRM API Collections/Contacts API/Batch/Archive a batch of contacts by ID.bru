@@ -1,0 +1,29 @@
+meta {
+  name: Archive a batch of contacts by ID
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/contacts/batch/archive
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>"
+      },
+      {
+        "id": "<string>"
+      }
+    ]
+  }
+}

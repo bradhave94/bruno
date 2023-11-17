@@ -1,0 +1,15 @@
+meta {
+  name: Restore a previous version of a Site Page- to the draft version of the Site Page
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/pages/site-pages/:objectId/revisions/:revisionId/restore-to-draft
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

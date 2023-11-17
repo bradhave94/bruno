@@ -1,0 +1,21 @@
+meta {
+  name: Start a new import
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/imports/
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Content-Type: multipart/form-data
+  Accept: application/json
+}
+
+body:form-urlencoded {
+  files: %3Cstring%3E
+  importRequest: %3Cstring%3E
+}

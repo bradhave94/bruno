@@ -1,0 +1,15 @@
+meta {
+  name: Push Blog Post draft edits live
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/blogs/posts/:objectId/draft/push-live
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: */*
+}

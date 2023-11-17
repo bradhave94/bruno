@@ -1,0 +1,20 @@
+meta {
+  name: Get details for a published table
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName?includeForeignIds=<boolean>&archived=<boolean>
+  body: none
+  auth: none
+}
+
+query {
+  includeForeignIds: <boolean>
+  archived: <boolean>
+}
+
+headers {
+  Accept: application/json
+}

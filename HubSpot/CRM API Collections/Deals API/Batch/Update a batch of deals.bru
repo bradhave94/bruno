@@ -1,0 +1,39 @@
+meta {
+  name: Update a batch of deals
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/crm/v3/objects/deals/batch/update
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inputs": [
+      {
+        "id": "<string>",
+        "properties": {
+          "culpa_c_3": "<string>",
+          "ipsumec7": "<string>",
+          "etd": "<string>"
+        }
+      },
+      {
+        "id": "<string>",
+        "properties": {
+          "laboris_c_8": "<string>",
+          "cupidatat2": "<string>",
+          "dolor_d": "<string>"
+        }
+      }
+    ]
+  }
+}

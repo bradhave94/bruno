@@ -1,0 +1,19 @@
+meta {
+  name: Delete a Blog Author
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/cms/v3/blogs/authors/:objectId?archived=<boolean>
+  body: none
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Accept: */*
+}

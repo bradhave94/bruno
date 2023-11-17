@@ -1,0 +1,32 @@
+meta {
+  name: Update a Folder
+  type: http
+  seq: 19
+}
+
+patch {
+  url: {{baseUrl}}/cms/v3/pages/landing-pages/folders/:objectId?archived=<boolean>
+  body: json
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "category": "<integer>",
+    "created": "<dateTime>",
+    "deletedAt": "<dateTime>",
+    "id": "<string>",
+    "name": "<string>",
+    "parentFolderId": "<long>",
+    "updated": "<dateTime>"
+  }
+}

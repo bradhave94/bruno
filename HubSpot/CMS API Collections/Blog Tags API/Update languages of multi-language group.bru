@@ -1,0 +1,25 @@
+meta {
+  name: Update languages of multi-language group
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/cms/v3/blogs/tags/multi-language/update-languages
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: */*
+}
+
+body:json {
+  {
+    "languages": {
+      "aute5e3": "<string>"
+    },
+    "primaryId": "<string>"
+  }
+}

@@ -1,0 +1,42 @@
+meta {
+  name: Update a Blog Author
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/cms/v3/blogs/authors/:objectId?archived=<boolean>
+  body: json
+  auth: none
+}
+
+query {
+  archived: <boolean>
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "avatar": "<string>",
+    "bio": "<string>",
+    "created": "<dateTime>",
+    "deletedAt": "<dateTime>",
+    "displayName": "<string>",
+    "email": "<string>",
+    "facebook": "<string>",
+    "fullName": "<string>",
+    "id": "<string>",
+    "language": "ksf",
+    "linkedin": "<string>",
+    "name": "<string>",
+    "slug": "<string>",
+    "translatedFromId": "<long>",
+    "twitter": "<string>",
+    "updated": "<dateTime>",
+    "website": "<string>"
+  }
+}

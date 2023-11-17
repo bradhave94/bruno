@@ -1,0 +1,15 @@
+meta {
+  name: Permanently deletes a row
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/cms/v3/hubdb/tables/:tableIdOrName/rows/:rowId/draft
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: */*
+}

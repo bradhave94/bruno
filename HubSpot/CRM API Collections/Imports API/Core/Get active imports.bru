@@ -1,0 +1,21 @@
+meta {
+  name: Get active imports
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/crm/v3/imports/?after=<string>&before=<string>&limit=<integer>
+  body: none
+  auth: none
+}
+
+query {
+  after: <string>
+  before: <string>
+  limit: <integer>
+}
+
+headers {
+  Accept: application/json
+}
